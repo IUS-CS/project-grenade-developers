@@ -1,1 +1,1 @@
-
+Hungry Dungeon is a Pacman-inspired rogue-like video game for PC. The player will have to work their way through 5 randomly-generated levels, collecting upgrades, eating enemies, and discovering secrets, all with just one life. Each level will have a unique design that requires different strategies to surpass.
