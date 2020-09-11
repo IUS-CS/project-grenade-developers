@@ -4,27 +4,27 @@
 
 ### Nathanael Mann
 
-* Role 1
-* Role 2
-* Role 3 
+* Lead Designer
+* Enemy AI
+* Making Enemies Move 
 
 ### Mark Bridgewater
 
-* Role 1
-* Role 2
-* Role 3 
+* Graphic Rendering
+* Architecture Design
+* Enemy AI 
 
 ### Jacob Coomes
 
-* Role 1
-* Role 2
-* Role 3 
+* Hitbox Collision
+* Input Controls
+* Moving Character
 
 ### Austin Brown
 
-* Role 1
-* Role 2
-* Role 3 
+* Collect/Create Sprites
+* Generate Hitboxes for Maze
+* Architecture Design 
 
 # **--Sprint: 2--**
 
