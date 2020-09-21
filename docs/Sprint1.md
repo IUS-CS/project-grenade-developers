@@ -31,12 +31,14 @@ Members present:
   * We accomplished more than our minimum goal.
   * Nathanael was a good leader and rounding everyone up
   * Austin was very knowledgable about using Git
+  * Everyone is very quick to help one another and making sure everyone is on the same page
   
   ### Bad
   
   * Mettings need to be better planned, so people can eaisily get ahold of one another.
   * Getting Unity and GitHub to work togther was a struggle.
   * Poor communication due to ignorance and other factors.
+  * Pushing and Pulling issues caused many stressful circumstances for the team
   
   ### Actionable Commitments
   
