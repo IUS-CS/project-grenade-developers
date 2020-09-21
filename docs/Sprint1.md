@@ -19,9 +19,9 @@ Members present:
   
   Here are screenshots of what we did:
  
-![Alt text](/docs/images/demo1.png?raw=true "Demo Image 1")
+![Demo Image 1](/docs/images/demo1.PNG?raw=true "Demo Image 1")
 
-![Alt text](/docs/images/demo2.png?raw=true "Demo Image 2")
+![Demo Image 2](/docs/images/demo2.PNG?raw=true "Demo Image 2")
   
   ## Retro
   
