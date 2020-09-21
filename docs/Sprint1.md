@@ -29,16 +29,19 @@ Members present:
   
   * People learned and adapted quickly to new technologies.
   * We accomplished more than our minimum goal.
+  * Nathanael was a good leader and rounding everyone up
+  * Austin was very knowledgable about using Git
   
   ### Bad
   
   * Mettings need to be better planned, so people can eaisily get ahold of one another.
   * Getting Unity and GitHub to work togther was a struggle.
+  * Poor communication due to ignorance and other factors.
   
   ### Actionable Commitments
   
   * As a team, we will attend scheduled meetings twice a week, in order to keep in touch.
-  * Individually, we will watch/research/learn how to better use Unity, GitHub, and any other resources necessary for this project.
+  * Individually, we will watch/research/learn how to better use Unity, Git, GitHub, and any other resources necessary for this project.
   
   ## Planning
   
