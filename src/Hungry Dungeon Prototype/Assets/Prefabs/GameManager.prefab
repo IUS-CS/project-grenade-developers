@@ -41,17 +41,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1603790652205151793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9426eab59f96d8142b0fca4935e27bdc, type: 3}
+  m_Script: {fileID: 11500000, guid: f0b0b1114e468b04b8aea797c5f89b74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  columns: 20
-  rows: 20
-  floorTiles:
-  - {fileID: 30168579955901842, guid: e6c1f035b92bdc54396d33d7cfceaf70, type: 3}
-  wallTiles:
-  - {fileID: 1798529173359701426, guid: dca18014c23582b40bcb7c11fe1948ea, type: 3}
-  enemyTiles:
-  - {fileID: 3705592431394317303, guid: 5b358a85b2637924b82142b72ead782e, type: 3}
+  boardScript: {fileID: 0}
 --- !u!114 &1603790652205151792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,7 +54,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1603790652205151793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e671cb29cb8e384a9968b2ea33f7295, type: 3}
+  m_Script: {fileID: 11500000, guid: bce8d883a6d554f4d9470f8acd78c731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boardScript: {fileID: 0}
+  columns: 20
+  rows: 20
+  floorTiles:
+  - {fileID: 30168579955901842, guid: bcfc7e9889e564140befe7a60c44034c, type: 3}
+  wallTiles:
+  - {fileID: 1798529173359701426, guid: b747fad16174f764998fdada5f567700, type: 3}
+  enemyTiles:
+  - {fileID: 3705592431394317303, guid: 0ed84308198829049bd6861aa9e278e5, type: 3}
