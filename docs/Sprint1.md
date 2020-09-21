@@ -29,7 +29,7 @@ Members present:
   
   * People learned and adapted quickly to new technologies.
   * We accomplished more than our minimum goal.
-  * Nathaneal was a good leader and rounding everyone up
+  * Nathanael was a good leader and rounding everyone up
   * Austin was very knowledgable about using Git
   
   ### Bad
