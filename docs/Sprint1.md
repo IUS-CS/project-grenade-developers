@@ -18,8 +18,10 @@ Members present:
   * We made basic C# scripts and implemented them in the game.
   
   Here are screenshots of what we did:
-  
-  ![Thing](/docs/images/screenshot1.png?raw=true)
+ 
+![Alt text](/docs/images/demo1.png?raw=true "Demo Image 1")
+
+![Alt text](/docs/images/demo2.png?raw=true "Demo Image 2")
   
   ## Retro
   
