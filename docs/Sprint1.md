@@ -49,5 +49,8 @@ Members present:
   
   Points | Story
   -------|--------
-  5      | As a user, I want...
-  8      | As an administrator, I want... so I can ...
+  5      | As a player, I want to be able to control my character.
+  7      | As a player, I want to get feedback when I interact with something in the game.
+  8      | As a developer, I want to be able to easily  add new "Enemy Types" to the game.
+  5      | As a developer, I want to be able to easily  add new "Power-Up Items" to the game.
+  7      | As a developer, I want to have a solid architectural "blueprint" for how the game is going to work.
