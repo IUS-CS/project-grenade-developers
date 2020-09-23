@@ -53,11 +53,13 @@
 
 ### 1 Introduction
 
+Hungry Dungeon is a PacMan inspired rogue-like video game for PC. The player will have to work their way through five randomly generated levels, collecting upgrades, eating enemies, and discovering secrets, all with just one life. Each level will have a unique design that requires different strategies to surpass.
+
 ### 2 Gameplay
 
 #### 2.1 Character Control
 
-	To allow for ease of access, the control system will use a multiple options, rather than a custom binding system. 
+To allow for ease of access, the control system will use a multiple options, rather than a custom binding system. 
 * Basic movement controls will consist of either the set (W/A/S/D) or (UP/DOWN/LEFT/RIGHT) to allow the player to change the direction they want to be moving. 
 	* A ‘use/action’ input will be available via either (SPACE) or (RSHIFT). This key will be how the player interacts with objects outside of simply running into them.
 	* Both sets of input controls will be accessible at all times, allowing the player to choose the setup that is most comfortable for them, without the need for a key-binding interface.
@@ -66,19 +68,15 @@ INSERT IMAGE HERE
 
 #### 2.2 Autonomous Character Behavior
 
-	The player character will automatically move forward when the game is not paused. 
-	The player can change which direction is forward via the Input Controls.
+The player character will automatically move forward when the game is not paused. The player can change which direction is forward via the Input Controls.
 
 #### 2.3 User Interface
 
-	This section details the various components of the user interface.
+This section details the various components of the user interface.
 
 ##### 2.3.1 Health
-
 ##### 2.3.2 Inventory
-
 ##### 2.3.3 Miscellaneous Information
-
 #### 2.4 Interactivity
 ##### 2.4.1Player/Enemy Interaction
 ##### 2.4.2 Player/Item Interaction
