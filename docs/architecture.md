@@ -115,15 +115,45 @@ Below the map on the middle-bottom right-hand side, miscellaneous information is
 ##### 3.3.4 Secrets
 ##### 3.3.5 Mini-Bosses/Level Exits
 ### 4 Enemy AI(s)
+
 #### 4.1Enemy Template
+
+Each enemy will work off of a basic AI template that allows them to move, locate the player, identify dangers and the layout of the level around them, and then specific enemie subtypes will have modifications and extrapolations of this basic AI to allow for more diverse and unique enemies throughout the game.
+
 #### 4.2 Enemy Subtypes
+
+The varied enemy subtypes are based on the varied AI’s in the original PacMan. This section details information regarding the AI types. See section 4.4 for specific information about individual enemies.
+
 ##### 4.2.1 “Red”
+
+Red AIs are the most aggressive type, their primary objective is to take the shortest path to the player, regardless of any other information. Taking advantage of this, the player would be able to lure Red enemies into traps and control their positioning.
+
 ##### 4.2.2 “Pink”
+
+Pink AIs are essentially smarter versions of Red AI’s rather than make a direct path to the player, they will attempt to predict where the player is going, and get in the way, usually in an effort to trap them with the help of a Red AI. Pink AI’s are smart enough to avoid putting themselves in unnecessary danger.
+
 ##### 4.2.3 “Cyan”
+
+Cyan AI’s are the most complicated of the bunch. They will pick a point on the map, often an item they are guarding, and patrol around it in a somewhat unpredictable pattern. These enemies can be easily avoided by staying away from their patrol point. If the player crosses into their patrol range, they will, without leaving that range, attempt to reach the player or defend their point without putting themselves in harms way.
+
 ##### 4.2.4 “Orange”
+
+Orange AI’s are shy. They will flee from the player unless there are other enemy types around, in which case they can adopt the behavior of other AI types. If a red enemy is closing in from behind, the Orange AI will attempt to cut off the player like a Pink AI. If a Pink Ai is about to cut the player off, an Orange AI will try to rush them from behind. When left to their own devices, Orange AI’s may also mimic the behavior of Cyan AI’s, joining in on the patrol, but fleeing if the player comes too close.
+
 ##### 4.2.5 “Other”
+
 #### 4.3 Bosses
+
+Bosses act as “skill tests” and occur in between each level, and after the final level. There will be at least 5 bosses that are randomly selected for Level’s 1-4 and at least one final boss that will be considered the last part of the game. 
+
+Mini-bosses, which are simply slightly stronger enemies appear within each level and must be defeated in order to exit the level.
+
+This section will be filled out in greater detail as the bosses for each level are designed.
+
 #### 4.4 Enemy Appendix 
+
+This section will be filled out at the end of the project, detailing each enemy in the game and how it works.
+
 ### 5 Graphics
 #### 5.1 Sprites
 #### 5.2 Animation
