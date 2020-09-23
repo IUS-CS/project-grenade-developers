@@ -53,30 +53,45 @@
 
 ### 1 Introduction
 
-Hungry Dungeon is a PacMan inspired rogue-like video game for PC. The player will have to work their way through five randomly generated levels, collecting upgrades, eating enemies, and discovering secrets, all with just one life. Each level will have a unique design that requires different strategies to surpass.
+Hungry Dungeon is a PacMan inspired rogue-like video game for PC. The player will have to work their way through five randomly generated levels, collecting upgrades, eating enemies, and discovering secrets, all with just one life. Each level will have a unique design that requires different strategies to surpass. 
 
 ### 2 Gameplay
 
 #### 2.1 Character Control
 
-To allow for ease of access, the control system will use a multiple options, rather than a custom binding system. 
+To allow for ease of access, the control system will use multiple options, rather than a custom binding system. 
 * Basic movement controls will consist of either the set (W/A/S/D) or (UP/DOWN/LEFT/RIGHT) to allow the player to change the direction they want to be moving. 
 	* A ‘use/action’ input will be available via either (SPACE) or (RSHIFT). This key will be how the player interacts with objects outside of simply running into them.
 	* Both sets of input controls will be accessible at all times, allowing the player to choose the setup that is most comfortable for them, without the need for a key-binding interface.
 
-INSERT IMAGE HERE
+![KeyboardControl](/docs/images/KeyboardControl.jpg?raw=true "KeyboardControl")
 
 #### 2.2 Autonomous Character Behavior
 
-The player character will automatically move forward when the game is not paused. The player can change which direction is forward via the Input Controls.
+The player character will automatically move forward when the game is not paused. The player can change which direction is forward via the Input Controls. This behavior will be ignored when the player is inside of a “shop” area, and they will be able to simply use the Input Controls to navigate, without needing to worry about autonomous movement.
 
-#### 2.3 User Interface
+#### 2.3 User Interface	
 
 This section details the various components of the user interface.
 
+![User Interface Mockup](/docs/images/mockupUI.png?raw=true "mockup UI")
+
 ##### 2.3.1 Health
+
+Health will be displayed at the top left-hand corner of the screen. The player with start with 3 hearts which can be lost if the player it hit by an enemy attack, or if the player stands still for too long. Hearts can be regained by completing combos.
+
 ##### 2.3.2 Inventory
-##### 2.3.3 Miscellaneous Information
+
+The players’ inventory will display all powerups and items they have collected in a run. It takes up the left-hand side of the screen, below the Health. Most items simply are upgrades added to the inventory permanently, and only display for visual reference. The player also has one “powerup” slot, which is displayed below the health bar. Pressing the use key will use the item in this slot.
+
+##### 2.3.3 Map
+
+The top right-hand corner of the screen contains a mini-map displaying the parts of the level that the player has explored, and updates live as the player uncovers new portions of a level.
+
+##### 2.3.4 Miscellaneous Information
+
+Below the map on the middle-bottom right-hand side, miscellaneous information is displayed such as time, level, difficulty &c.
+
 #### 2.4 Interactivity
 ##### 2.4.1Player/Enemy Interaction
 ##### 2.4.2 Player/Item Interaction
@@ -113,7 +128,8 @@ This section details the various components of the user interface.
 #### 5.1 Sprites
 #### 5.2 Animation
 ### 6 Audio Management
-
+#### 6.1 Backgroud Music
+#### 6.2 SFX
 
 
 
