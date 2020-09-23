@@ -66,7 +66,8 @@ INSERT IMAGE HERE
 
 #### 2.2 Autonomous Character Behavior
 
-	The player character will automatically move forward when the game is not paused (in a method similar to the original Pac-Man game). The player can change which direction is forward via the Input Controls (W/A/S/D) or (UP/DOWN/LEFT/RIGHT).
+	The player character will automatically move forward when the game is not paused. 
+	The player can change which direction is forward via the Input Controls.
 
 #### 2.3 User Interface
 
