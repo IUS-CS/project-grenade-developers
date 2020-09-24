@@ -209,13 +209,24 @@ This section will be filled out in greater detail as the bosses for each level a
 This section will be filled out at the end of the project, detailing each enemy in the game and how it works.
 
 ### 5 Graphics
+
 #### 5.1 Sprites
+
+Each object including the walls, enemies, floor, and players will have sprites that signify what they are.
+* Each level will have unique wall and floor textures
+* Each enemy will have a unique texture with a primary color that reflects its primary AI type.
+* Mini-bosses will have a glowing outline to signify they are mini-bosses.
+
 #### 5.2 Animation
+
+For enemies and the player, animation of the sprites will be used to give the game some ‘aliveness’. There will also be animations to signify events such as damage, using a power-up or an enemy attacking. Animations will be made using Unity.
+
 ### 6 Audio Management
-#### 6.1 Backgroud Music
+
+#### 6.1 Background Music
+
+There will be at least 4 different soundtracks for background music that will play as the game is running. 1 soundtrack for when sitting in the first menu of the game, 1 soundtrack for when the base game is running the player moves through the dungeon, 1 soundtrack when the player is in a “boss” room, and the last remaining soundtrack for when the player is in the shop room.
+
 #### 6.2 SFX
 
-
-
-
-
+Different sound effects will play depending on the different interactions between the player, enemy, level and UI elements. For instance, when the player collides with an enemy, it will play a ‘hit’ sound or when you hover over a certain element in the ui, it will make a ‘pong’ sound. There will also be a sound effect to alert the player when they find a secret.
