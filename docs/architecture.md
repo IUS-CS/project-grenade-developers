@@ -80,6 +80,8 @@ This section details the various components of the user interface.
 
 Health will be displayed at the top left-hand corner of the screen. The player will start with 3 hearts which can be lost if the player is hit by an enemy attack, or if the player stands still for too long. Hearts can be regained by completing combos.
 
+![hearts](/docs/images/hearts.jpg?raw=true "hearts")
+
 ##### 2.3.2 Inventory
 
 The players’ inventory will display all powerups and items they have collected in a run. It takes up the left-hand side of the screen, below the Health. Most items simply are upgrades added to the inventory permanently, and only display for visual reference. The player also has one “powerup” slot, which is displayed below the health bar. Pressing the use key will use the item in this slot.
