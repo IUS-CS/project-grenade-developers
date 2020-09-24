@@ -118,7 +118,6 @@ When the player runs into a wall, they will be prompted with a small icon to pus
 #### 2.5 Replay Value
 
 Each time the game is beaten, an additional difficulty level will be unlocked. 
-Easy -> Medium -> Hard -> Insane -> Impossible!
 
 ![Difficulty](/docs/images/Difficulty.jpg?raw=true "Difficulty")
 
