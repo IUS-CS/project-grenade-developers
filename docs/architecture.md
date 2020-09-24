@@ -186,6 +186,8 @@ The varied enemy subtypes are based on the varied AI’s in the original PacMan,
 
 Red AIs are the most aggressive type, their primary objective is to take the shortest path to the player, regardless of any other information. Taking advantage of this, the player would be able to lure Red enemies into traps and control their positioning. Most enemies with the “Red” AI type cannot be damaged directly.
 
+![BadTime](/docs/images/BadTime.png?raw=true "BadTime")
+
 ##### 4.2.2 “Pink”
 
 Pink AIs are essentially smarter versions of Red AI’s rather than make a direct path to the player, they will attempt to predict where the player is going, and get in the way, usually in an effort to trap them with the help of a Red AI. Pink AI’s are smart enough to avoid putting themselves in unnecessary danger.
