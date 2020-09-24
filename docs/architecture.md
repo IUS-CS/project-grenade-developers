@@ -174,7 +174,7 @@ In each level, one mini-boss will be spawned. Killing this mini-boss opens the l
 
 Each enemy will work off of a basic AI template that allows them to move, locate the player, identify dangers and the layout of the level around them, and then specific enemy subtypes will have modifications and extrapolations of this basic AI to allow for more diverse and unique enemies throughout the game.
 
-![Enemy AI Structure](/docs/images/enemyAISturcture.png?raw=true "Enemy AI Structure")
+![Enemy AI Structure](/docs/images/enemyAIStructure.png.png?raw=true "Enemy AI Structure")
 
 #### 4.2 Enemy Subtypes
 
