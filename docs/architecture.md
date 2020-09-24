@@ -120,7 +120,7 @@ When the player runs into a wall, they will be prompted with a small icon to pus
 Each time the game is beaten, an additional difficulty level will be unlocked. 
 Easy -> Medium -> Hard -> Insane -> Impossible!
 
-![Difficulty](/docs/images/Difficultyl.jpg?raw=true "Difficulty")
+![Difficulty](/docs/images/Difficulty.jpg?raw=true "Difficulty")
 
 #### 2.6 Powerups/Items Appendix
 
