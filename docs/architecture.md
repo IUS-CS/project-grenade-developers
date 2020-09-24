@@ -147,7 +147,10 @@ This section details how the procedural generation algorithm handles the placeme
 
 ##### 3.3.1 Enemies
 
-Enemies are spawned according to the difficulty selected. Enemies themselves had a difficulty value, and the algorithm attempts to fill a room within a certain margin of error around a target “total” difficulty. This way, the player can choose different modes, and as developers we can have the difficulty across one singular level be varied and more “random.”
+Enemies are spawned according to the difficulty selected. Enemies themselves had a difficulty value, and the algorithm attempts to fill a room within a certain margin of error around a target “total” difficulty. This way, the player can choose different modes, and as developers we can have the difficulty across one singular level be varied and more “random.” This technique is often referred to as Perlin Noise. Below is an example of Perlin Noise on a grid. The black tiles would represent higher levels enemies, the dark grey ones low level enemies, and the white tiles would represent no enemies.
+
+![Perlin Noise Grid](/docs/images/perlinNoiseGrid.png?raw=true "Perlin Noise Grid")
+
 
 ##### 3.3.2 Treasure Items
 
@@ -170,6 +173,8 @@ In each level, one mini-boss will be spawned. Killing this mini-boss opens the l
 #### 4.1 Enemy Template
 
 Each enemy will work off of a basic AI template that allows them to move, locate the player, identify dangers and the layout of the level around them, and then specific enemy subtypes will have modifications and extrapolations of this basic AI to allow for more diverse and unique enemies throughout the game.
+
+![Enemy AI Structure](/docs/images/enemyAISturcture.png?raw=true "Enemy AI Structure")
 
 #### 4.2 Enemy Subtypes
 
