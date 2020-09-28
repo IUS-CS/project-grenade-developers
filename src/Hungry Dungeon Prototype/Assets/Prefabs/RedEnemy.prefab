@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3705592431394317302}
   - component: {fileID: 3705592431394317298}
   - component: {fileID: 3705592431394317299}
+  - component: {fileID: 1402556298}
   m_Layer: 8
   m_Name: RedEnemy
   m_TagString: Enemy
@@ -150,3 +151,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.0001, y: 0.0001}
   m_EdgeRadius: 0
+--- !u!114 &1402556298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3705592431394317303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9d32e59a38c2a4e9ee5f23826db94a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  viewDistance: 0
