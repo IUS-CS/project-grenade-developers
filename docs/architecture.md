@@ -80,8 +80,6 @@ This section details the various components of the user interface.
 
 Health will be displayed at the top left-hand corner of the screen. The player will start with 3 hearts which can be lost if the player is hit by an enemy attack, or if the player stands still for too long. Hearts can be regained by completing combos.
 
-![hearts](/docs/images/hearts.jpg?raw=true "hearts")
-
 ##### 2.3.2 Inventory
 
 The players’ inventory will display all powerups and items they have collected in a run. It takes up the left-hand side of the screen, below the Health. Most items simply are upgrades added to the inventory permanently, and only display for visual reference. The player also has one “powerup” slot, which is displayed below the health bar. Pressing the use key will use the item in this slot.
@@ -185,8 +183,6 @@ The varied enemy subtypes are based on the varied AI’s in the original PacMan,
 ##### 4.2.1 “Red”
 
 Red AIs are the most aggressive type, their primary objective is to take the shortest path to the player, regardless of any other information. Taking advantage of this, the player would be able to lure Red enemies into traps and control their positioning. Most enemies with the “Red” AI type cannot be damaged directly.
-
-![BadTime](/docs/images/BadTime.png?raw=true "BadTime")
 
 ##### 4.2.2 “Pink”
 
