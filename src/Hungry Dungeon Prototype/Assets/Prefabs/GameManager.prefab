@@ -64,4 +64,4 @@ MonoBehaviour:
   wallTiles:
   - {fileID: 1798529173359701426, guid: b747fad16174f764998fdada5f567700, type: 3}
   enemyTiles:
-  - {fileID: 3705592431394317303, guid: 0ed84308198829049bd6861aa9e278e5, type: 3}
+  - {fileID: 7613376030209806243, guid: 0ed84308198829049bd6861aa9e278e5, type: 3}

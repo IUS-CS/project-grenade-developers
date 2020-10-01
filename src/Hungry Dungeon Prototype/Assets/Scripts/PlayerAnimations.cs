@@ -17,38 +17,62 @@ public class PlayerAnimations : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
+            if (anim.GetBool("isGoingRight") || anim.GetBool("isGoingDown") || anim.GetBool("isGoingLeft"))
+            {
+                anim.SetBool("isGoingRight", false);
+                anim.SetBool("isGoingDown", false);
+                anim.SetBool("isGoingLeft", false);
+            }
             anim.SetBool("isGoingUp", true);
         }
-        else
+        /*else
         {
             anim.SetBool("isGoingUp", false);
-        }
+        }*/
 
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
+            if (anim.GetBool("isGoingUp") || anim.GetBool("isGoingDown") || anim.GetBool("isGoingLeft"))
+            {
+                anim.SetBool("isGoingUp", false);
+                anim.SetBool("isGoingDown", false);
+                anim.SetBool("isGoingLeft", false);
+            }
             anim.SetBool("isGoingRight", true);
         }
-        else
+        /*else
         {
             anim.SetBool("isGoingRight", false);
-        }
+        }*/
 
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
+            if (anim.GetBool("isGoingUp") || anim.GetBool("isGoingDown") || anim.GetBool("isGoingRight"))
+            {
+                anim.SetBool("isGoingRight", false);
+                anim.SetBool("isGoingDown", false);
+                anim.SetBool("isGoingUp", false);
+            }
             anim.SetBool("isGoingLeft", true);
         }
-        else
+        /*else
         {
             anim.SetBool("isGoingLeft", false);
-        }
+        }*/
 
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
+            if (anim.GetBool("isGoingUp") || anim.GetBool("isGoingRight") || anim.GetBool("isGoingLeft"))
+            {
+                anim.SetBool("isGoingUp", false);
+                anim.SetBool("isGoingRight", false);
+                anim.SetBool("isGoingLeft", false);
+            }
             anim.SetBool("isGoingDown", true);
         }
-        else
+        /*else
         {
             anim.SetBool("isGoingDown", false);
-        }
+        }*/
     }
 }
