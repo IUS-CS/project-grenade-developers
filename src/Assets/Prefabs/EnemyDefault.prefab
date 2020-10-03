@@ -93,7 +93,7 @@ Animator:
   m_GameObject: {fileID: 7613376030209806243}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 56cb1df40ba7d21479bb8ae97d880fd5, type: 2}
+  m_Controller: {fileID: 9100000, guid: b1043403e46e4a94eb0a0e9c1a1da8b4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -111,14 +111,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7613376030209806243}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb9d32e59a38c2a4e9ee5f23826db94a, type: 3}
+  m_Script: {fileID: 11500000, guid: 83e6835b9a2dc0545bfa76dcf2100f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
-  viewDistance: 5
-  damageToPlayer: 0
-  health: 1
-  aiType: 0
 --- !u!114 &7613376030209806242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,9 +123,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7613376030209806243}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d38ffdaa0ffeb542abdcc0294d2f821, type: 3}
+  m_Script: {fileID: 11500000, guid: e20ea7c3ea2a2ed4c8412a5a2a3beaa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
+  viewDistance: 5
+  damageToPlayer: 0
+  health: 1
+  aiType: 0
 --- !u!212 &2087403767
 SpriteRenderer:
   m_ObjectHideFlags: 0

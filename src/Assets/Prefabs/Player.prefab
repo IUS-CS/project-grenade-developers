@@ -96,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 9155225001080135227}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2960c77300d08a14787e47ba51d7644d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3c182dc354610784c865ebb1cfe51094, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -161,13 +161,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 9155225001080135227}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2de153dd54e17d24284e7c819059490a, type: 3}
+  m_Script: {fileID: 11500000, guid: 46029216db8b5574a85380dc4488b038, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 6
-  speed: 2.5
-  currentPowerEffect: 
-  move: {x: 1, y: 0, z: 0}
 --- !u!114 &856299943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +173,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9155225001080135227}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae05ec4b0348a8d4cb9cb70335eefd34, type: 3}
+  m_Script: {fileID: 11500000, guid: cf6bd920a028e3540b50bb5ac4f828dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
+  speed: 2.5
+  currentPowerEffect: 
+  move: {x: 1, y: 0, z: 0}
