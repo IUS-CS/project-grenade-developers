@@ -34,20 +34,24 @@ Temporary Items
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
-/[Ll]ibrary/
-[Tt]emp/
-/[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
+/src/[Ll]ibrary/
+/src/[Tt]emp/
+/src/[Oo]bj/
+/src/[Bb]uild/
+/src/[Bb]uilds/
+/src/[Ll]ogs/
+/src/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
-!/[Aa]ssets/**/*.meta
+!/src/[Aa]ssets/**/**/*.meta
+!/src/[Aa]ssets/**/*.meta
+!/src/[Aa]ssets/*.meta
+
+
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -79,6 +83,10 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
 
 # Unity3D generated file on crash reports
 sysinfo.txt
