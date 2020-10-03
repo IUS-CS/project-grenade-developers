@@ -46,13 +46,6 @@ Temporary Items
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
 
-# Asset meta data should only be ignored when the corresponding asset is also ignored
-!/src/[Aa]ssets/**/**/*.meta
-!/src/[Aa]ssets/**/*.meta
-!/src/[Aa]ssets/*.meta
-
-
-
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
 
@@ -128,5 +121,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/src/[Aa]ssets/**/**/*.meta
+!/src/[Aa]ssets/**/*.meta
+!/src/[Aa]ssets/*.meta
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,unity
