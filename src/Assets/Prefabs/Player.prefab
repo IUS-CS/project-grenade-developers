@@ -177,6 +177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  speed: 2.5
+  speed: 3
   currentPowerEffect: 
   move: {x: 1, y: 0, z: 0}
