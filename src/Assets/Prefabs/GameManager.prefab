@@ -65,3 +65,5 @@ MonoBehaviour:
   - {fileID: 1798529173359701426, guid: 45ea6e7236ee82647a77ae476f502e8a, type: 3}
   enemyTiles:
   - {fileID: 7613376030209806243, guid: c2d0cfdf00608d548abae9f5bebce2ca, type: 3}
+  itemTiles:
+  - {fileID: 3496915076627424296, guid: 71aad87138f07af49a2748323e497610, type: 3}
