@@ -42,7 +42,7 @@ The White sections were completed:
   
   ### Actionable Commitments
   
-  * As a group, we will plan out our work days better, so that things get done throught the sprint.
+  * As a group, we will plan out our work days better, so that things get done throughout the sprint.
   
   ## Planning
   
