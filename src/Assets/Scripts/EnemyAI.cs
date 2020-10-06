@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class EnemyMove : MonoBehaviour
+public class EnemyAI : MovingObject
 {
 
     public float speed;
@@ -14,13 +15,21 @@ public class EnemyMove : MonoBehaviour
     private Transform target;
 
 
-    void Start()
+    protected override void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
+        //TO-DO
+        /*
+         *  Transfer
+         *
+         *
+         */
+
+
         if (!isDead())
         {
             if (Vector2.Distance(transform.position, target.position) < viewDistance)
@@ -38,5 +47,10 @@ public class EnemyMove : MonoBehaviour
 
     public void damageTarget()
     {
+    }
+
+    protected override void CantMove <T> (T Component)
+    {
+
     }
 }
