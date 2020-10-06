@@ -126,8 +126,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20ea7c3ea2a2ed4c8412a5a2a3beaa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockingLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  boxCollider: {fileID: 0}
+  rigidBody: {fileID: 0}
+  objectDirectionX: 0
+  objectDirectionY: 0
   speed: 1
-  viewDistance: 5
+  viewDistance: 20
   damageToPlayer: 0
   health: 1
   aiType: 0

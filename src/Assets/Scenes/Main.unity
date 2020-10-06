@@ -121,7 +121,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &123231146
+--- !u!1001 &493101678
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -182,6 +182,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155225001080135226, guid: fb941dd87b757f74eb0c4379b2b447f6,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155225001080135226, guid: fb941dd87b757f74eb0c4379b2b447f6,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155225001080135226, guid: fb941dd87b757f74eb0c4379b2b447f6,
+        type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9155225001080135227, guid: fb941dd87b757f74eb0c4379b2b447f6,
         type: 3}

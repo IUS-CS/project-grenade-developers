@@ -28,6 +28,7 @@ public class BoardManager : MonoBehaviour {
     public GameObject[] floorTiles; //Array of floor prefabs
     public GameObject[] wallTiles; //Array of wall prefabs
     public GameObject[] enemyTiles; //Array of enemy prefabs
+    public GameObject[] itemTiles; //Array of item prefabs
 
 
     private Transform boardHolder; //Reference to the transform of the board object
@@ -94,6 +95,8 @@ public class BoardManager : MonoBehaviour {
         BoardSetup();
         InitialiseList();
         int enemyCount = 1;
+        int itemCount = 1;
         LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
+        LayoutObjectAtRandom(itemTiles, itemCount, itemCount);
     }
 }
