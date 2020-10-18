@@ -54,8 +54,8 @@ public class BoardManager : MonoBehaviour {
         // 1 = Wall
         // 0 = Floor
         int[,] levelGen = new int[columns,rows];
-        for (int k = 0; k < columns; k++){
-            for(int l = 0; l < rows; l++){
+        for (int k = 0; k < columns/5; k++){
+            for(int l = 0; l < rows/5; l++){
                 levelGen[k, l] = 1; //start with a grid full of walls.
             }
         }
@@ -72,19 +72,19 @@ public class BoardManager : MonoBehaviour {
             int connectedPaths = 0;
             if (newWallX-1 >= 0 && levelGen[newWallX-1,newWallY] == 0 )
                 connectedPaths++;
-            if (newWallX+1 <= rows-1 && levelGen[newWallX+1,newWallY] == 0 )
+            if (newWallX+1 <= (rows-1)/5 && levelGen[newWallX+1,newWallY] == 0 )
                 connectedPaths++;
             if (newWallY-1 >= 0 && levelGen[newWallX,newWallY-1] == 0 )
                 connectedPaths++;
-            if (newWallY+1 <= columns-1 && levelGen[newWallX,newWallY+1] == 0 )
+            if (newWallY+1 <= (columns-1)/5 && levelGen[newWallX,newWallY+1] == 0 )
                 connectedPaths++;
             if (newWallX-1 >= 0 && newWallY-1 >= 0 && levelGen[newWallX-1,newWallY-1] == 0 )
                 connectedPaths++;
-            if (newWallX+1 <= rows-1 && newWallY-1 >= 0 && levelGen[newWallX+1,newWallY-1] == 0 )
+            if (newWallX+1 <= (rows-1)/5 && newWallY-1 >= 0 && levelGen[newWallX+1,newWallY-1] == 0 )
                 connectedPaths++;
-            if (newWallX-1 >= 0 && newWallY+1 <= columns-1 && levelGen[newWallX-1,newWallY+1] == 0 )
+            if (newWallX-1 >= 0 && newWallY+1 <= (columns-1)/5 && levelGen[newWallX-1,newWallY+1] == 0 )
                 connectedPaths++;
-            if (newWallX+1 <= rows-1 && newWallY+1 <= columns-1 && levelGen[newWallX+1,newWallY+1] == 0 )
+            if (newWallX+1 <= (rows-1)/5 && newWallY+1 <= (columns-1)/5 && levelGen[newWallX+1,newWallY+1] == 0 )
                 connectedPaths++;
 
             if (connectedPaths == 1 || connectedPaths == 2) {
@@ -113,13 +113,21 @@ public class BoardManager : MonoBehaviour {
             wallList.RemoveAt(randomWall); //remove the wall from the list
         }//while
         
+        //initialize levelGenRooms as a scale-up of levelgen
+        int[,] levelGenRooms = new int[columns,rows];
+        for (int k = 0; k < columns; k++){
+            for(int l = 0; l < rows; l++){
+                levelGenRooms[k, l] = levelGen[k/5,l/5]; //start with a grid full of walls.
+            }
+        }
+        
         boardHolder = new GameObject("Board").transform;
-        for(int i = -1; i < columns + 1; i++)
+        for(int i = -5; i < columns + 5; i++)
         {
-            for(int j = -1; j < rows + 1; j++)
+            for(int j = -5; j < rows + 5; j++)
             {
                 GameObject toCreate = floorTiles[Random.Range(0, floorTiles.Length)];
-                if (i == -1 || i == columns || j == -1 || j == rows || levelGen[i, j] == 1)
+                if (i <= -1 || i >= columns || j <= -1 || j >= rows || levelGenRooms[i, j] >= 1)
                     toCreate = wallTiles[Random.Range(0, wallTiles.Length)];
                 GameObject instance = Instantiate(toCreate, new Vector3(i, j, 0f), Quaternion.identity) as GameObject;
 
