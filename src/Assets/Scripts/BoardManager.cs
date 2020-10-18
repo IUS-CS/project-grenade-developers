@@ -320,8 +320,10 @@ public class BoardManager : MonoBehaviour {
     {
         BoardSetup();
         InitialiseList();
-        int enemyCount = 0;
-        int itemCount = 0;
+        InventoryImp
+        int enemyCount = 1;
+        int itemCount = 15;
+        master
         LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
         LayoutObjectAtRandom(itemTiles, itemCount, itemCount);
     }

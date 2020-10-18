@@ -67,3 +67,5 @@ MonoBehaviour:
   - {fileID: 7613376030209806243, guid: c2d0cfdf00608d548abae9f5bebce2ca, type: 3}
   itemTiles:
   - {fileID: 3496915076627424296, guid: 71aad87138f07af49a2748323e497610, type: 3}
+  - {fileID: 3899053441835422482, guid: 516bdc2889bd51048a13d2360ab34ff7, type: 3}
+  - {fileID: 130651012960761498, guid: 485b826717192b04fbbff6633be949c6, type: 3}
