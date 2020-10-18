@@ -23,8 +23,8 @@ public class BoardManager : MonoBehaviour {
         }
     }
 
-    public int columns = 20; //columns and rows are size of board/room
-    public int rows = 20;
+    public int columns = 100; //columns and rows are size of board/room
+    public int rows = 100;
     public GameObject[] floorTiles; //Array of floor prefabs
     public GameObject[] wallTiles; //Array of wall prefabs
     public GameObject[] enemyTiles; //Array of enemy prefabs
@@ -72,19 +72,19 @@ public class BoardManager : MonoBehaviour {
             int connectedPaths = 0;
             if (newWallX-1 >= 0 && levelGen[newWallX-1,newWallY] == 0 )
                 connectedPaths++;
-            if (newWallX+1 <= 19 && levelGen[newWallX+1,newWallY] == 0 )
+            if (newWallX+1 <= rows-1 && levelGen[newWallX+1,newWallY] == 0 )
                 connectedPaths++;
             if (newWallY-1 >= 0 && levelGen[newWallX,newWallY-1] == 0 )
                 connectedPaths++;
-            if (newWallY+1 <= 19 && levelGen[newWallX,newWallY+1] == 0 )
+            if (newWallY+1 <= columns-1 && levelGen[newWallX,newWallY+1] == 0 )
                 connectedPaths++;
             if (newWallX-1 >= 0 && newWallY-1 >= 0 && levelGen[newWallX-1,newWallY-1] == 0 )
                 connectedPaths++;
-            if (newWallX+1 <= 19 && newWallY-1 >= 0 && levelGen[newWallX+1,newWallY-1] == 0 )
+            if (newWallX+1 <= rows-1 && newWallY-1 >= 0 && levelGen[newWallX+1,newWallY-1] == 0 )
                 connectedPaths++;
-            if (newWallX-1 >= 0 && newWallY+1 <= 19 && levelGen[newWallX-1,newWallY+1] == 0 )
+            if (newWallX-1 >= 0 && newWallY+1 <= columns-1 && levelGen[newWallX-1,newWallY+1] == 0 )
                 connectedPaths++;
-            if (newWallX+1 <= 19 && newWallY+1 <= 19 && levelGen[newWallX+1,newWallY+1] == 0 )
+            if (newWallX+1 <= rows-1 && newWallY+1 <= columns-1 && levelGen[newWallX+1,newWallY+1] == 0 )
                 connectedPaths++;
 
             if (connectedPaths == 1 || connectedPaths == 2) {
@@ -96,7 +96,7 @@ public class BoardManager : MonoBehaviour {
                     wallList.Add(newWallX-1);
                     wallList.Add(newWallY);
                 }
-                if (newWallX+1 <= 19 && levelGen[newWallX+1,newWallY] == 1 ){
+                if (newWallX+1 <= rows-1 && levelGen[newWallX+1,newWallY] == 1 ){
                     wallList.Add(newWallX+1);
                     wallList.Add(newWallY);
                 }
@@ -104,7 +104,7 @@ public class BoardManager : MonoBehaviour {
                     wallList.Add(newWallX);
                     wallList.Add(newWallY-1);
                 }
-                if (newWallY+1 <= 19 && levelGen[newWallX,newWallY+1] == 1 ){
+                if (newWallY+1 <= columns-1 && levelGen[newWallX,newWallY+1] == 1 ){
                     wallList.Add(newWallX);
                     wallList.Add(newWallY+1);
                 }
@@ -155,8 +155,8 @@ public class BoardManager : MonoBehaviour {
     {
         BoardSetup();
         InitialiseList();
-        int enemyCount = 1;
-        int itemCount = 1;
+        int enemyCount = 2;
+        int itemCount = 3;
         LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
         LayoutObjectAtRandom(itemTiles, itemCount, itemCount);
     }
