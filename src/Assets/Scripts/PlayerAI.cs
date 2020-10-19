@@ -4,63 +4,42 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerAI : MovingObject
+public class PlayerAI : MonoBehaviour
 {
 
-    protected override void Update()
-    {        
-        int horizontal = (int)(Input.GetAxisRaw("Horizontal"));
-        int vertical = (int)(Input.GetAxisRaw("Vertical"));
+    public float moveSpeed = 8f;
+    public Transform movePoint;
+    public float pickUpRadius = 1f;
 
+    public LayerMask whatStopsMovement;
 
-        
-
-        if(horizontal == 1)
-        {
-            objectDirectionX = 1;
-            objectDirectionY = 0;
-        }
-        if(horizontal == -1)
-        {
-            objectDirectionX = -1;
-            objectDirectionY = 0;
-        }
-        if(vertical == 1)
-        {
-            objectDirectionX = 0;
-            objectDirectionY = 1;
-        }
-        if(vertical == -1)
-        {
-            objectDirectionX = 0;
-            objectDirectionY = -1;
-        }
-
-        AttemptMove<Wall>(objectDirectionX, objectDirectionY);
-
-
-        Vector2 velocity = new Vector2(objectDirectionX, objectDirectionY);
-
-        //rigidBody.velocity = new Vector2(objectDirectionX * transform.localScale.x * 2, objectDirectionY * transform.localScale.y * 2);
-        print(rigidBody.position);
-
-        ///////////////////////THIS IS F***ING WRONG////////////////////////////
-        int milliseconds = 50;
-        Thread.Sleep(milliseconds);
-        ///////////////////////THIS IS F***ING WRONG////////////////////////////
-
-        rigidBody.MovePosition(rigidBody.position + velocity);
-        
-
+    void Start()
+    {
+        movePoint.parent = null;
     }
 
-
-
-
-    protected override void CantMove <T> (T component)
+    void Update()
     {
-        Wall hitWall = component as Wall;
-        objectDirectionX = 0;
-        objectDirectionY = 0;
+
+        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
+
+        if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
+        {
+
+            if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
+            {
+                if (!Physics2D.OverlapCircle((movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f)), .2f, whatStopsMovement))
+                {
+                    movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                }
+            }
+            else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+            {
+                if (!Physics2D.OverlapCircle((movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f)), .2f, whatStopsMovement))
+                {
+                    movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                }
+            }
+        }
     }
 }
