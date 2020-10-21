@@ -97,4 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Toggle: 1
+  playerCamSize: 4.1
+  mapCamSize: 57
   mainCamera: {fileID: 1693029887537015908}

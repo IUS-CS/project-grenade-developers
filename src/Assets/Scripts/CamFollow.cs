@@ -6,6 +6,8 @@ public class CamFollow : MonoBehaviour
 {
 
     public bool Toggle = true;
+    public float playerCamSize = 4.1f;
+    public float mapCamSize = 57f;
     private Transform Player;
     public Camera mainCamera;
     // Start is called before the first frame update
@@ -19,7 +21,7 @@ public class CamFollow : MonoBehaviour
     {
         if (Toggle == true)
         {
-            mainCamera.orthographicSize = 3.398244f;
+            mainCamera.orthographicSize = playerCamSize;
             //Camera position stored in temp
             Vector3 temp = transform.position;
             temp.x = Player.position.x;
@@ -29,7 +31,7 @@ public class CamFollow : MonoBehaviour
         else
         {
             transform.position = new Vector3(50,50,-10);
-            mainCamera.orthographicSize = 57f;
+            mainCamera.orthographicSize = mapCamSize;
         }
     }
 }
