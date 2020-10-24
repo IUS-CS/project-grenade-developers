@@ -23,12 +23,14 @@ public class BoardManager : MonoBehaviour {
         }
     }
 
-    public int columns = 100; //columns and rows are size of board/room
-    public int rows = 100;
+    public static int columns = 100; //columns and rows are size of board/room
+    public static int rows = 100;
     public GameObject[] floorTiles; //Array of floor prefabs
     public GameObject[] wallTiles; //Array of wall prefabs
     public GameObject[] enemyTiles; //Array of enemy prefabs
     public GameObject[] itemTiles; //Array of item prefabs
+    
+    public int[,] levelGenRooms = new int[columns,rows];//final Array used to place GameObjects
 
     private Transform boardHolder; //Reference to the transform of the board object
     private List<Vector3> gridPositions = new List<Vector3>(); //List of possible locations to put tiles such as enemies
@@ -175,7 +177,6 @@ public class BoardManager : MonoBehaviour {
         }//for k
         
         //initialize levelGenRooms as a scale-up of levelgen
-        int[,] levelGenRooms = new int[columns,rows];
         int[,] room =  new int[5,5];
         for (int k = 0; k < columns/5; k++){
             for(int l = 0; l < rows/5; l++){
@@ -296,10 +297,23 @@ public class BoardManager : MonoBehaviour {
     //Gives a random vector3 position on the board and removes double spawns
     Vector3 RandomPosition()
     {
-        int randomIndex = Random.Range(0, gridPositions.Count);
-        Vector3 randomPosition = gridPositions[randomIndex];
-        gridPositions.RemoveAt(randomIndex);
-        return randomPosition;
+        int workingTile = 0;
+        do {
+            
+            int randomIndex = Random.Range(0, gridPositions.Count);
+            int randomRow = (int) gridPositions[randomIndex][0];
+            int randomColumn = (int) gridPositions[randomIndex][1];
+            workingTile = levelGenRooms[randomRow, randomColumn];
+
+            if (workingTile == 1){
+                
+                Vector3 randomPosition = gridPositions[randomIndex];
+                gridPositions.RemoveAt(randomIndex);
+                return randomPosition;
+                
+            }//if
+        } while (workingTile == 0);
+        return Vector3.zero;
     }
 
     //Spawn tiles at random positions such as enemies
@@ -320,8 +334,8 @@ public class BoardManager : MonoBehaviour {
     {
         BoardSetup();
         InitialiseList();
-        int enemyCount = 1;
-        int itemCount = 15;
+        int enemyCount = Random.Range(20,30);
+        int itemCount = Random.Range(10,15);
         LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
         LayoutObjectAtRandom(itemTiles, itemCount, itemCount);
     }
