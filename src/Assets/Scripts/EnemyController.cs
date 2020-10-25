@@ -5,9 +5,11 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public GameObject[] EnemyTypes;
-    public int EnemyHealth = 1; //3 Hearts
+    public int EnemyHealth = 1;
     public float EnemyMovementSpeed = 1.5f;
     public float EnemyDamageOnTarget = 0.5f;
+    public float EnemyHitCooldown = 4f;
+    private float EnemyNextHit = 0f;
     public float EnemyViewRadius = 10f;
     public float EnemyHitRadius = 3f;
     public bool isEnemyDead = false;
@@ -39,12 +41,34 @@ public class EnemyController : MonoBehaviour
         if (IsCloseToThePlayer() == true)
         {
 
-            if (Player.PlayerHealth != 0 && Player.isPlayerDead != true)
-            {
-                Player.PlayerHealth -= (EnemyDamageOnTarget - Player.CurrentDamageResistence);
-            }
+            if (Time.time > EnemyNextHit) {
 
+                if (Player.PlayerHealth != 0 && Player.isPlayerDead != true)
+                {
+                    Player.PlayerHealth -= (EnemyDamageOnTarget - Player.CurrentDamageResistence);
+                    EnemyNextHit = Time.time + EnemyHitCooldown;
+                }
+            }
         }
+
+        if (KilledThePlayer() == true)
+        {
+            DestroySelf();
+        }
+    }
+
+    public bool KilledThePlayer()
+    {
+        if (Player.isPlayerDead == true)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 
     void Start()

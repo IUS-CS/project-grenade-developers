@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8148358123331533012}
   m_Layer: 8
-  m_Name: GameObject
+  m_Name: EnemyMovePoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -230,9 +230,11 @@ MonoBehaviour:
   EnemyHealth: 1
   EnemyMovementSpeed: 1.5
   EnemyDamageOnTarget: 0.5
+  EnemyHitCooldown: 4
   EnemyViewRadius: 1
   EnemyHitRadius: 1
   isEnemyDead: 0
   Enemy: {fileID: 7613376030209806242}
-  Player: {fileID: -849662558731877298, guid: fb941dd87b757f74eb0c4379b2b447f6, type: 3}
-  PlayerPosition: {fileID: 0}
+  Player: {fileID: 8622602406502200626, guid: fb941dd87b757f74eb0c4379b2b447f6, type: 3}
+  PlayerPosition: {fileID: 9155225001080135222, guid: fb941dd87b757f74eb0c4379b2b447f6,
+    type: 3}
