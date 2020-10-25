@@ -17,12 +17,30 @@ public class HealthBar : MonoBehaviour
 
     void Update ()
     {
+
+        if (player.isPlayerDead == false)
+        {
+
+            UpdateHealth();
+            healthText.text = "HEALTH: " + health;
+
+        }
+
+        else
+        {
+
+            healthText.text = "";
+
+        }
+
+    }
+
+    void UpdateHealth()
+    {
         if (health != player.PlayerHealth)
         {
             health = player.PlayerHealth;
         }
-
-        healthText.text = "HEALTH: " + health;
     }
 
 }

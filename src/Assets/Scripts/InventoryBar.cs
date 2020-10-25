@@ -9,6 +9,7 @@ public class InventoryBar : MonoBehaviour
 
     public Inventory inventory;
     public Text inventoryText;
+    public PlayerController player;
 
     public List<int> counters;
     public List<string> names;
@@ -17,6 +18,7 @@ public class InventoryBar : MonoBehaviour
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         counters = inventory.ItemCounters;
         names = inventory.ItemNames;
         effects = inventory.ItemEffectAmounts;
@@ -24,8 +26,20 @@ public class InventoryBar : MonoBehaviour
 
     void Update()
     {
-        checkInventory();
-        printInventory();
+        if (player.isPlayerDead == false)
+        {
+
+            checkInventory();
+            printInventory();
+
+        }
+
+        else
+        {
+
+            inventoryText.text = "";
+
+        }
     }
 
     void checkInventory()
