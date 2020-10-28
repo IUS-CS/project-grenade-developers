@@ -64,8 +64,8 @@ MonoBehaviour:
   enemyTiles:
   - {fileID: 7613376030209806243, guid: c2d0cfdf00608d548abae9f5bebce2ca, type: 3}
   itemTiles:
-  - {fileID: 3496915076627424296, guid: 71aad87138f07af49a2748323e497610, type: 3}
-  - {fileID: 3899053441835422482, guid: 516bdc2889bd51048a13d2360ab34ff7, type: 3}
-  - {fileID: 130651012960761498, guid: 485b826717192b04fbbff6633be949c6, type: 3}
+  - {fileID: 294873892829543033, guid: 8acf68cebe071ef4b9bac054c72257b4, type: 3}
+  - {fileID: 4558231013614319296, guid: 25041c2bd4911c34da14f165c34f2f5f, type: 3}
+  - {fileID: 6645931541552641682, guid: 0f7e335e10e92b94ea3891348cd29355, type: 3}
   levelExit:
   - {fileID: 5398224544197899001, guid: ac67da71b5276e44f951fc611e52bc3f, type: 3}
