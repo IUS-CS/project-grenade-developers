@@ -29,6 +29,7 @@ public class BoardManager : MonoBehaviour {
     public GameObject[] wallTiles; //Array of wall prefabs
     public GameObject[] enemyTiles; //Array of enemy prefabs
     public GameObject[] itemTiles; //Array of item prefabs
+    public GameObject[] levelExit; //The level exit
     
     public int[,] levelGenRooms = new int[columns,rows];//final Array used to place GameObjects
 
@@ -317,10 +318,8 @@ public class BoardManager : MonoBehaviour {
     }
 
     //Spawn tiles at random positions such as enemies
-    void LayoutObjectAtRandom(GameObject[] tileArray, int minimum, int maximum)
+    void LayoutObjectAtRandom(GameObject[] tileArray, int objectCount)
     {
-        int objectCount = Random.Range(minimum, maximum + 1);
-
         for(int i = 0; i < objectCount; i++)
         {
             Vector3 randomPosition = RandomPosition();
@@ -336,7 +335,8 @@ public class BoardManager : MonoBehaviour {
         InitialiseList();
         int enemyCount = Random.Range(20,30);
         int itemCount = Random.Range(10,15);
-        LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
-        LayoutObjectAtRandom(itemTiles, itemCount, itemCount);
+        LayoutObjectAtRandom(enemyTiles, enemyCount);
+        LayoutObjectAtRandom(itemTiles, itemCount);
+        LayoutObjectAtRandom(levelExit, 1);
     }
 }
