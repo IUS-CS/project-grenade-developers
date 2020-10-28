@@ -16,7 +16,7 @@ public class Exit : MonoBehaviour
 
     bool IsPlayerClose()
     {
-        if (Vector3.Distance(transform.position, playerPos.position) <= 0.5f)
+        if (Vector3.Distance(transform.position, playerPos.position) <= 1.5f)
         {
             return true;
         }

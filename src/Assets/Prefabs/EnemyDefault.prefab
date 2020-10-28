@@ -232,7 +232,7 @@ MonoBehaviour:
   EnemyDamageOnTarget: 0.5
   EnemyHitCooldown: 4
   EnemyViewRadius: 1
-  EnemyHitRadius: 1
+  EnemyHitRadius: 0.5
   isEnemyDead: 0
   Enemy: {fileID: 7613376030209806242}
   Player: {fileID: 8622602406502200626, guid: fb941dd87b757f74eb0c4379b2b447f6, type: 3}

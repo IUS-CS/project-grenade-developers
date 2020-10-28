@@ -331,11 +331,11 @@ public class BoardManager : MonoBehaviour {
     void LayoutExitAtRandom(GameObject[] tileArray)
     {
             Vector3 randomPosition = RandomPosition();
-            if (randomPosition[0] >= randomPosition[1]) {
+/*            if (randomPosition[0] >= randomPosition[1]) {
                 randomPosition = new Vector3(randomPosition[0], rows-3, 0f);
             } else {
                 randomPosition = new Vector3(columns-3, randomPosition[1], 0f);
-            }//if-else
+            }//if-else*/
         
             GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
             Instantiate(tileChoice, randomPosition, Quaternion.identity);

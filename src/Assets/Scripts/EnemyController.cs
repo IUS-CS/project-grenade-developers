@@ -11,7 +11,7 @@ public class EnemyController : MonoBehaviour
     public float EnemyHitCooldown = 4f;
     private float EnemyNextHit = 0f;
     public float EnemyViewRadius = 10f;
-    public float EnemyHitRadius = 3f;
+    public float EnemyHitRadius = 0.5f;
     public bool isEnemyDead = false;
 
     public EnemyAI Enemy;
