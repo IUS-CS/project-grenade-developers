@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8148358123331533012}
   m_Layer: 8
-  m_Name: GameObject
+  m_Name: EnemyMovePoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7613376030209806247}
   - component: {fileID: 7613376030209806241}
   - component: {fileID: 7613376030209806242}
+  - component: {fileID: 2292121435446151602}
   m_Layer: 8
   m_Name: EnemyDefault
   m_TagString: Enemy
@@ -207,9 +208,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20ea7c3ea2a2ed4c8412a5a2a3beaa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
+  moveSpeed: 1.5
   movePoint: {fileID: 8148358123331533012}
   viewDistance: 10
   whatStopsMovement:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &2292121435446151602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7613376030209806243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be693793a628e94cb8f78466df84858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyTypes: []
+  EnemyHealth: 1
+  EnemyMovementSpeed: 1.5
+  EnemyDamageOnTarget: 0.5
+  EnemyHitCooldown: 4
+  EnemyViewRadius: 1
+  EnemyHitRadius: 1
+  isEnemyDead: 0
+  Enemy: {fileID: 7613376030209806242}
+  Player: {fileID: 8622602406502200626, guid: fb941dd87b757f74eb0c4379b2b447f6, type: 3}
+  PlayerPosition: {fileID: 9155225001080135222, guid: fb941dd87b757f74eb0c4379b2b447f6,
+    type: 3}

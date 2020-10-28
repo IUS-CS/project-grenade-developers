@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EnemyAI : MovingObject
 {
-    public float moveSpeed = 8f;
+    public float moveSpeed = 1.5f;
     public Transform movePoint;
     public float viewDistance = 10f;
 
