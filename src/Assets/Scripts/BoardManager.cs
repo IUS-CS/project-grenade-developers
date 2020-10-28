@@ -328,6 +328,19 @@ public class BoardManager : MonoBehaviour {
         }
     }
     
+    void LayoutExitAtRandom(GameObject[] tileArray)
+    {
+            Vector3 randomPosition = RandomPosition();
+            if (randomPosition[0] >= randomPosition[1]) {
+                randomPosition = new Vector3(randomPosition[0], rows-3, 0f);
+            } else {
+                randomPosition = new Vector3(columns-3, randomPosition[1], 0f);
+            }//if-else
+        
+            GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
+            Instantiate(tileChoice, randomPosition, Quaternion.identity);
+    }
+    
     //What is called by GameManager to setup new random board 
     public void SetupScene (int level)
     {
@@ -337,6 +350,6 @@ public class BoardManager : MonoBehaviour {
         int itemCount = Random.Range(10,15);
         LayoutObjectAtRandom(enemyTiles, enemyCount);
         LayoutObjectAtRandom(itemTiles, itemCount);
-        LayoutObjectAtRandom(levelExit, 1);
+        LayoutExitAtRandom(levelExit);
     }
 }
