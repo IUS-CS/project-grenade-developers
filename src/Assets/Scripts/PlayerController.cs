@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public float PlayerPickUpRadius = 1f;
     public bool isPlayerInjured = false;
     public bool isPlayerDead = false;
+    public bool isPlayerWinner = false;
+    public bool PlayerFoundPortal = false;
     public bool isPlayerImmortal = false; //God Mode For Testing Purposes
 
     public string CurrentPowerUpEffect = "NOTHING";
@@ -25,6 +27,14 @@ public class PlayerController : MonoBehaviour
         if (PlayerHealth == 0 && isPlayerImmortal != true)
         {
             isPlayerDead = true;
+        }
+    }
+
+    void DidThePlayerWin()
+    {
+        if (PlayerFoundPortal == true)
+        {
+            isPlayerWinner = true;
         }
     }
 
@@ -54,5 +64,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         DidThePlayerDie();
+        DidThePlayerWin();
     }
 }

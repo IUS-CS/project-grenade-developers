@@ -8,6 +8,7 @@ public class CamFollow : MonoBehaviour
     public bool Toggle = true;
     public float playerCamSize = 4.1f;
     public float gameOverCamSize = 4.1f;
+    public float winCamSize = 4.1f;
     public float mapCamSize = 57f;
     private Transform Player;
     private Transform GameOverScreen;
@@ -24,7 +25,7 @@ public class CamFollow : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (playerController.isPlayerDead == false) {
+        if (playerController.isPlayerDead == false && playerController.isPlayerWinner == false) {
 
             if (Toggle == true)
             {
@@ -42,10 +43,15 @@ public class CamFollow : MonoBehaviour
             }
         }
 
-        else
-        {
-            transform.position = new Vector3(-95,96,-10);
+        if (playerController.isPlayerDead == true) {
+            transform.position = new Vector3(-95, 96, -10);
             mainCamera.orthographicSize = gameOverCamSize;
+        }
+
+        if (playerController.isPlayerWinner == true)
+        {
+            transform.position = new Vector3(-95,86,-10);
+            mainCamera.orthographicSize = winCamSize;
         }
     }
 }
