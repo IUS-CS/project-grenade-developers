@@ -13,7 +13,7 @@ public class Item : MonoBehaviour
     public string ItemType; //Determine what the item is
     public string ItemDescription = "";
     public string[] itemTypeList = { "speed_boost" , "pick_pocketer", "default"};
-    public Item[] ITEMS;
+    //public Item[] ITEMS;
     public Transform playerPos;
     public PlayerAI player;
     public PlayerController playercontroller;
