@@ -15,12 +15,27 @@ public class PlayerController : MonoBehaviour
     public bool PlayerFoundPortal = false;
     public bool isPlayerImmortal = false; //God Mode For Testing Purposes
 
+    public float InvulnerabilityCooldown = 4f;
+    public float NextAvailableHit = 0f;
+
+
     public string CurrentPowerUpEffect = "NOTHING";
     public float CurrentDamageResistence = 0;
 
     public Inventory PlayerInventory;
     public PlayerAI PlayerMovementScript;
     //public Item[] Items;
+
+    public bool CanPlayerBeHit()
+    {
+
+        if (Time.time > NextAvailableHit)
+        {
+            NextAvailableHit = Time.time + InvulnerabilityCooldown;
+            return true;
+        }
+        return false;
+    }
 
     void DidThePlayerDie()
     {

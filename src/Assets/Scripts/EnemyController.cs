@@ -41,12 +41,11 @@ public class EnemyController : MonoBehaviour
         if (IsCloseToThePlayer() == true)
         {
 
-            if (Time.time > EnemyNextHit) {
+            if (Player.CanPlayerBeHit() == true) {
 
                 if (Player.PlayerHealth != 0 && Player.isPlayerDead != true)
                 {
                     Player.PlayerHealth -= (EnemyDamageOnTarget - Player.CurrentDamageResistence);
-                    EnemyNextHit = Time.time + EnemyHitCooldown;
                 }
             }
         }
