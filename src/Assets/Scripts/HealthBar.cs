@@ -18,7 +18,7 @@ public class HealthBar : MonoBehaviour
     void Update ()
     {
 
-        if (player.isPlayerDead == false)
+        if (player.isPlayerDead == false && player.isPlayerWinner == false)
         {
 
             UpdateHealth();
