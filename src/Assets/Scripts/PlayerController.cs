@@ -11,7 +11,13 @@ public class PlayerController : MonoBehaviour
     public float PlayerPickUpRadius = 1f;
     public bool isPlayerInjured = false;
     public bool isPlayerDead = false;
+    public bool isPlayerWinner = false;
+    public bool PlayerFoundPortal = false;
     public bool isPlayerImmortal = false; //God Mode For Testing Purposes
+
+    public float InvulnerabilityCooldown = 4f;
+    public float NextAvailableHit = 0f;
+
 
     public string CurrentPowerUpEffect = "NOTHING";
     public float CurrentDamageResistence = 0;
@@ -20,11 +26,30 @@ public class PlayerController : MonoBehaviour
     public PlayerAI PlayerMovementScript;
     //public Item[] Items;
 
+    public bool CanPlayerBeHit()
+    {
+
+        if (Time.time > NextAvailableHit)
+        {
+            NextAvailableHit = Time.time + InvulnerabilityCooldown;
+            return true;
+        }
+        return false;
+    }
+
     void DidThePlayerDie()
     {
         if (PlayerHealth == 0 && isPlayerImmortal != true)
         {
             isPlayerDead = true;
+        }
+    }
+
+    void DidThePlayerWin()
+    {
+        if (PlayerFoundPortal == true)
+        {
+            isPlayerWinner = true;
         }
     }
 
@@ -54,5 +79,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         DidThePlayerDie();
+        DidThePlayerWin();
     }
 }

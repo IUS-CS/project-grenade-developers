@@ -11,7 +11,9 @@ public class Item : MonoBehaviour
     //private SpriteRenderer spriteRenderer; //Store component ref to the attached SpriteRenderer
 
     public string ItemType; //Determine what the item is
+    public string ItemDescription = "";
     public string[] itemTypeList = { "speed_boost" , "pick_pocketer", "default"};
+    //public Item[] ITEMS;
     public Transform playerPos;
     public PlayerAI player;
     public PlayerController playercontroller;
@@ -36,7 +38,7 @@ public class Item : MonoBehaviour
 
     void Update()
     {
-        if (BeingPickedUp() == true)
+        if (BeingPickedUp() == true && Input.GetKeyDown(KeyCode.E))
         {
             int index = Array.IndexOf(itemTypeList, ItemType);
             switch (ItemType)

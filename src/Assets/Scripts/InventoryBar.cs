@@ -26,7 +26,7 @@ public class InventoryBar : MonoBehaviour
 
     void Update()
     {
-        if (player.isPlayerDead == false)
+        if (player.isPlayerDead == false && player.isPlayerWinner == false)
         {
 
             checkInventory();

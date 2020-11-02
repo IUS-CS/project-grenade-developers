@@ -124,10 +124,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemType: speed_boost
+  ItemDescription: You Gain Increased Speed
   itemTypeList:
   - speed_boost
   - pick_pocketer
   - default
+  ITEMS:
+  - {fileID: 5607105714677387976}
+  - {fileID: 3362343400908116634, guid: 25041c2bd4911c34da14f165c34f2f5f, type: 3}
+  - {fileID: 1584419657442631203, guid: 8acf68cebe071ef4b9bac054c72257b4, type: 3}
   playerPos: {fileID: 9155225001080135222, guid: fb941dd87b757f74eb0c4379b2b447f6,
     type: 3}
   player: {fileID: 9132838534423137048, guid: fb941dd87b757f74eb0c4379b2b447f6, type: 3}
