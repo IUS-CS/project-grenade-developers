@@ -46,12 +46,12 @@ Members present:
   
   Points | Story
   -------|--------
-  0      |  As a player, I want a diverse set of enemies so that the game feels more dynamic.
-  0      |  As a player, I want a diverse set of items, so that the rewards seem more interesting.
-  0      |  As a player, I want the game to last longer (I want to have multiple levels).
-  0      |  As a player, I want more than one way to fight enemies (Multiple Power-ups).
-  0      |  As a developer, I want the project documentation to be up-to-date and exported to HTML.
-  0      |  As a player, I want the game to look good, and be easy to use.
-  0      |  As a player, I want audio feedback/background music.
-  0      |  As a developer, I want the game to run independently from Unity.
-  0      |  We need to make a projectreflections.md.
+  5      |  As a player, I want a diverse set of enemies so that the game feels more dynamic.
+  3      |  As a player, I want a diverse set of items, so that the rewards seem more interesting.
+  2      |  As a player, I want the game to last longer (I want to have multiple levels).
+  8      |  As a player, I want more than one way to fight enemies (Multiple Power-ups).
+  3      |  As a developer, I want the project documentation to be up-to-date and exported to HTML.
+  5      |  As a player, I want the game to look good, and be easy to use.
+  8      |  As a player, I want audio feedback/background music.
+  1      |  As a developer, I want the game to run independently from Unity.
+  2      |  We need to make a projectreflections.md.
