@@ -8,6 +8,9 @@ TagManager:
   - Item
   - PowerUp
   - GameOverScreen
+  - Exit
+  - Wall
+  - Floor
   layers:
   - Default
   - TransparentFX
