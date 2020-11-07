@@ -107,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: 733409481
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 6f16f84a08657654491ec9a3f867db0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -115,7 +115,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &7613376030209806240
@@ -126,7 +126,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7613376030209806243}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b1043403e46e4a94eb0a0e9c1a1da8b4, type: 2}
   m_CullingMode: 0
@@ -153,10 +153,10 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
@@ -229,12 +229,11 @@ MonoBehaviour:
   EnemyTypes: []
   EnemyHealth: 1
   EnemyMovementSpeed: 1.5
-  EnemyDamageOnTarget: 0.5
+  EnemyDamageOnTarget: 1
   EnemyHitCooldown: 4
-  EnemyViewRadius: 1
+  EnemyViewRadius: 10
   EnemyHitRadius: 0.5
   isEnemyDead: 0
-  Enemy: {fileID: 7613376030209806242}
-  Player: {fileID: 8622602406502200626, guid: fb941dd87b757f74eb0c4379b2b447f6, type: 3}
-  PlayerPosition: {fileID: 9155225001080135222, guid: fb941dd87b757f74eb0c4379b2b447f6,
-    type: 3}
+  Enemy: {fileID: 0}
+  Player: {fileID: 0}
+  PlayerPosition: {fileID: 0}

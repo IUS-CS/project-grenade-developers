@@ -43,7 +43,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.11683431, g: 0.04672482, b: 0.13207549, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   Toggle: 1
   playerCamSize: 4.1
   gameOverCamSize: 4.1
+  winCamSize: 4.1
   mapCamSize: 57
   playerController: {fileID: 8622602406502200626, guid: fb941dd87b757f74eb0c4379b2b447f6,
     type: 3}

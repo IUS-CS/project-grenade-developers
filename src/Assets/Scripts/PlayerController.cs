@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float PlayerHealth = 3f; //3 Hearts
+    public float PlayerHealth = 6f; //Technically 3 But Each is Worth 1/2
     public string PlayerMovementDirection = "RIGHT";
     public float PlayerMovementSpeed = 5f;
     public float PlayerPickUpRadius = 1f;
