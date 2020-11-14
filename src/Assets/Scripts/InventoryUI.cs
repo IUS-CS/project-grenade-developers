@@ -120,12 +120,16 @@ public class InventoryUI : MonoBehaviour
             checkInventory();
             printInventory();
         }
-        else
+        else //This Just Gets The UI off the Game Over Screen
         {
             for (int x = 0; x < InventorySlots.Length; x++)
             {
                 InventorySlots[x].enabled = false;
             }
+            InventoryCount0.text = "";
+            InventoryCount1.text = "";
+            InventoryCount2.text = "";
+            InventoryCount3.text = "";
         }
     }
 }
