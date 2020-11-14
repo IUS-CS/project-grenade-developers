@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public float PlayerHealth = 6f; //Technically 3 But Each is Worth 1/2
+    public float PlayerMaxHealth = 6f;
     public string PlayerMovementDirection = "RIGHT";
     public float PlayerMovementSpeed = 5f;
     public float PlayerPickUpRadius = 1f;
@@ -53,21 +54,32 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void GetEffectsFromInventory()
+    public void GetEffectsFromInventory(string PreviouslyAddedItem)
     {
         //Speed_Boost Index
-        if (PlayerInventory.ItemCounters[0] != 0)
+        if (PlayerInventory.ItemCounters[0] != 0 && PreviouslyAddedItem == "speed_boost")
         {
             float addAmount = PlayerInventory.ItemEffectAmounts[0];
             PlayerMovementSpeed = PlayerMovementSpeed + addAmount;
         }
 
         //Pick_Pocketer Index
-        if (PlayerInventory.ItemCounters[1] != 0)
+        if (PlayerInventory.ItemCounters[1] != 0 && PreviouslyAddedItem == "pick_pocketer")
         {
             float addAmount = PlayerInventory.ItemEffectAmounts[1];
             PlayerPickUpRadius = PlayerPickUpRadius + addAmount;
         }
+
+        //Health Boost Index
+        if (PlayerInventory.ItemCounters[2] != 0 && PreviouslyAddedItem == "health_boost")
+        {
+            if (PlayerHealth < PlayerMaxHealth)
+            {
+                PlayerHealth = PlayerHealth + 1;
+            }
+        }
+
+        //Default Doesnt Do Anything, Just For Testing
     }
 
     void Start()

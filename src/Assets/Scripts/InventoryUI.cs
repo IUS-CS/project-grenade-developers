@@ -10,17 +10,26 @@ public class InventoryUI : MonoBehaviour
     public int NumberOfExistingItems;
 
     public Image[] InventorySlots;
+    public Text InventoryCount0;
+    public Text InventoryCount1;
+    public Text InventoryCount2;
+    public Text InventoryCount3;
+    public Text InventoryCount4;
+    public Text InventoryCount5;
     public Sprite speedBoost;
     public Sprite pickPocket;
     public Sprite defaultItem;
+    public Sprite healthBoost;
 
     public bool SBINST;
     public bool PPINST;
     public bool DFINST;
+    public bool HBINST;
 
     public GameObject speedBoostButton;
     public GameObject pickPocketButton;
     public GameObject defaultItemButton;
+    public GameObject healthBoostButton;
 
     public Inventory inventory;
 
@@ -61,21 +70,46 @@ public class InventoryUI : MonoBehaviour
 
     void printInventory()
     {
-        if (counters[0] > 0 && SBINST != true) //Has A Speed Boost
+        if (counters[0] > 0) //Has A Speed Boost
         {
-            Instantiate(speedBoostButton, InventorySlots[0].transform, false);
-            SBINST = true;
+            if (SBINST != true)
+            {
+                Instantiate(speedBoostButton, InventorySlots[0].transform, false);
+                SBINST = true;
+            }
         }
-        if (counters[1] > 0 && PPINST != true) //Has A PickPocket
+
+        if (counters[1] > 0) //Has A PickPocket
         {
-            Instantiate(pickPocketButton, InventorySlots[1].transform, false);
-            PPINST = true;
+            if (PPINST != true)
+            {
+                Instantiate(pickPocketButton, InventorySlots[1].transform, false);
+                PPINST = true;
+            }
         }
-        if (counters[2] > 0 && DFINST != true) //Has A Default Item
+
+        if (counters[2] > 0) //Has A Health Item
         {
-            Instantiate(defaultItemButton, InventorySlots[2].transform, false);
-            DFINST = true;
+            if (HBINST != true)
+            {
+                Instantiate(healthBoostButton, InventorySlots[2].transform, false);
+                HBINST = true;
+            }
         }
+
+        if (counters[3] > 0) //Has Default Item
+        {
+            if (DFINST != true)
+            {
+                Instantiate(defaultItemButton, InventorySlots[3].transform, false);
+                DFINST = true;
+            }
+        }
+
+        InventoryCount0.text = "" + (counters[0]);
+        InventoryCount1.text = "" + (counters[1]);
+        InventoryCount2.text = "" + (counters[2]);
+        InventoryCount3.text = "" + (counters[3]);
     }
 
     void Update()

@@ -10,11 +10,10 @@ public class Inventory : MonoBehaviour
     public List<string> ItemNames = new List<string>();
     public List<float> ItemEffectAmounts = new List<float>();
     public float MultiplierBonus = 0.25f;
+    public int NumberOfItems = 6;
 
-    public string[] itemTypeList = { "speed_boost", "pick_pocketer", "default" };
+    public string[] itemTypeList = { "speed_boost", "pick_pocketer", "health_boost", "default" };
     public PlayerController Player;
-
-    //public GameObject[] slots;
 
     void Start()
     {
