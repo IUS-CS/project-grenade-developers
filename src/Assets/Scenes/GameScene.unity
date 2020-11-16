@@ -706,6 +706,11 @@ PrefabInstance:
       propertyPath: itemTypeList.Array.data[3]
       value: default
       objectReference: {fileID: 0}
+    - target: {fileID: -4380320350420384502, guid: fb941dd87b757f74eb0c4379b2b447f6,
+        type: 3}
+      propertyPath: MultiplierBonus
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8140926276622599457, guid: fb941dd87b757f74eb0c4379b2b447f6,
         type: 3}
       propertyPath: hearts.Array.size

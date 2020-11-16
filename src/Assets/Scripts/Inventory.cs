@@ -9,7 +9,7 @@ public class Inventory : MonoBehaviour
     public List<int> ItemCounters = new List<int>();
     public List<string> ItemNames = new List<string>();
     public List<float> ItemEffectAmounts = new List<float>();
-    public float MultiplierBonus = 0.25f;
+    public float MultiplierBonus = 0.10f;
     public int NumberOfItems = 6;
 
     public string[] itemTypeList = { "speed_boost", "pick_pocketer", "health_boost", "default" };
