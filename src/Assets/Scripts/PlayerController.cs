@@ -38,20 +38,23 @@ public class PlayerController : MonoBehaviour
         return false;
     }
 
-    void DidThePlayerDie()
+    public bool DidThePlayerDie()
     {
         if (PlayerHealth == 0 && isPlayerImmortal != true)
         {
             isPlayerDead = true;
         }
+        return false;
     }
 
-    void DidThePlayerWin()
+    public bool DidThePlayerWin()
     {
         if (PlayerFoundPortal == true)
         {
             isPlayerWinner = true;
         }
+
+        return false;
     }
 
     public void GetEffectsFromInventory(string PreviouslyAddedItem)

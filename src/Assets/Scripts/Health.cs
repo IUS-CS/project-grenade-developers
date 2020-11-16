@@ -23,50 +23,33 @@ public class Health : MonoBehaviour
     void Update()
     {
 
-        if (player.isPlayerDead == false && player.isPlayerWinner == false)
+
+        health = player.PlayerHealth;
+
+        if (health > numOfHearts)
         {
-
-            health = player.PlayerHealth;
-
-            if (health > numOfHearts)
-            {
-                health = numOfHearts;
-            }
-
-            for (int x = 0; x < hearts.Length; x++)
-            {
-                if (x < health)
-                {
-                    hearts[x].sprite = heart;
-                }
-                else
-                {
-                    hearts[x].sprite = corruptHeart;
-                }
-
-                if (x < numOfHearts)
-                {
-                    hearts[x].enabled = true;
-                }
-                else
-                {
-                    hearts[x].enabled = false;
-                }
-            }
-
+            health = numOfHearts;
         }
 
-        else
-        {
-            TurnOffHearts();
-        }
-    }
-
-    void TurnOffHearts()
-    {
         for (int x = 0; x < hearts.Length; x++)
         {
-            hearts[x].enabled = false;
+            if (x < health)
+            {
+                hearts[x].sprite = heart;
+            }
+            else
+            {
+                hearts[x].sprite = corruptHeart;
+            }
+
+            if (x < numOfHearts)
+            {
+                hearts[x].enabled = true;
+            }
+            else
+            {
+                hearts[x].enabled = false;
+            }
         }
     }
 }
