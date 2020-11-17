@@ -194,10 +194,12 @@ MonoBehaviour:
   defaultItem: {fileID: 7035298192628418512, guid: a006ef1b2c3676a44b5bee0ace020dd0,
     type: 3}
   healthBoost: {fileID: 21300000, guid: cc017685d066a08419a0b0090ec0e3b8, type: 3}
+  multiplier: {fileID: 21300000, guid: ac37ebafc82dba640bbb5e2b3b7ffc02, type: 3}
   SBINST: 0
   PPINST: 0
   DFINST: 0
   HBINST: 0
+  MINST: 0
   speedBoostButton: {fileID: 9115598534784141770, guid: 0871c6cc137ecee4ba069b7607923fa5,
     type: 3}
   pickPocketButton: {fileID: 3483377886861329244, guid: 4653be5b5bad69648be4cf2160a00162,
@@ -205,6 +207,8 @@ MonoBehaviour:
   defaultItemButton: {fileID: 6536562198901442371, guid: 2b1bf55e2646169448d64445bc9aa222,
     type: 3}
   healthBoostButton: {fileID: 8999479525251675223, guid: dfe931cd2da5cbe4cba9329f4bed4f24,
+    type: 3}
+  multiplierButton: {fileID: 605593893445765628, guid: fc3ebd06122a5d84da64f838e477c41b,
     type: 3}
   inventory: {fileID: 13748532}
   counters: 000000000000000000000000000000000000000000000000
@@ -689,7 +693,7 @@ PrefabInstance:
     - target: {fileID: -4380320350420384502, guid: fb941dd87b757f74eb0c4379b2b447f6,
         type: 3}
       propertyPath: itemTypeList.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -4380320350420384502, guid: fb941dd87b757f74eb0c4379b2b447f6,
         type: 3}
@@ -704,12 +708,17 @@ PrefabInstance:
     - target: {fileID: -4380320350420384502, guid: fb941dd87b757f74eb0c4379b2b447f6,
         type: 3}
       propertyPath: itemTypeList.Array.data[3]
-      value: default
+      value: multiplier
       objectReference: {fileID: 0}
     - target: {fileID: -4380320350420384502, guid: fb941dd87b757f74eb0c4379b2b447f6,
         type: 3}
       propertyPath: MultiplierBonus
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4380320350420384502, guid: fb941dd87b757f74eb0c4379b2b447f6,
+        type: 3}
+      propertyPath: itemTypeList.Array.data[4]
+      value: default
       objectReference: {fileID: 0}
     - target: {fileID: 8140926276622599457, guid: fb941dd87b757f74eb0c4379b2b447f6,
         type: 3}
@@ -1099,13 +1108,19 @@ PrefabInstance:
     - target: {fileID: 1603790652205151792, guid: c80e7e8f5e5d6a143b2e9f1818042c55,
         type: 3}
       propertyPath: itemTiles.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1603790652205151792, guid: c80e7e8f5e5d6a143b2e9f1818042c55,
         type: 3}
       propertyPath: itemTiles.Array.data[3]
       value: 
       objectReference: {fileID: 8305008859863351645, guid: 9d1418b48e829314a860fe62862d04db,
+        type: 3}
+    - target: {fileID: 1603790652205151792, guid: c80e7e8f5e5d6a143b2e9f1818042c55,
+        type: 3}
+      propertyPath: itemTiles.Array.data[4]
+      value: 
+      objectReference: {fileID: 597428870777189361, guid: a84d76185638ea74495cfd3eeec7dc34,
         type: 3}
     - target: {fileID: 1603790652205151793, guid: c80e7e8f5e5d6a143b2e9f1818042c55,
         type: 3}

@@ -12,7 +12,7 @@ public class Item : MonoBehaviour
 
     public string ItemType; //Determine what the item is
     public string ItemDescription = "";
-    public string[] itemTypeList = { "speed_boost", "pick_pocketer", "health_boost", "default" };
+    public string[] itemTypeList = { "speed_boost", "pick_pocketer", "health_boost", "multiplier", "default" };
     //public Item[] ITEMS;
     public Transform playerPos;
     public PlayerAI player;
@@ -47,7 +47,8 @@ public class Item : MonoBehaviour
                 case "speed_boost": AddedItem = "speed_boost"; inventory.ItemCounters[0] = inventory.ItemCounters[0] + 1; inventory.ItemNames[0] = "Item: Speed_Boost"; inventory.ItemEffectAmounts[0] = (inventory.ItemCounters[0] * inventory.MultiplierBonus); break;
                 case "pick_pocketer": AddedItem = "pick_pocketer"; inventory.ItemCounters[1] = inventory.ItemCounters[1] + 1; inventory.ItemNames[1] = "Item: Pick_Pocketer"; inventory.ItemEffectAmounts[1] = (inventory.ItemCounters[1] * inventory.MultiplierBonus); break;
                 case "health_boost": AddedItem = "health_boost"; inventory.ItemCounters[2] = inventory.ItemCounters[2] + 1; inventory.ItemNames[2] = "Item: Health_Boost"; break;
-                default: inventory.ItemCounters[3] = inventory.ItemCounters[3] + 1; inventory.ItemNames[3] = "Item: Default"; break;
+                case "multiplier": AddedItem = "multiplier"; inventory.ItemCounters[3] = inventory.ItemCounters[3] + 1; inventory.ItemNames[3] = "Item: Multiplier"; break;
+                default: inventory.ItemCounters[4] = inventory.ItemCounters[4] + 1; inventory.ItemNames[4] = "Item: Default"; break;
             }
             playercontroller.GetEffectsFromInventory(AddedItem);
             Destroy(gameObject);

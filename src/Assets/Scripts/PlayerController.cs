@@ -78,8 +78,15 @@ public class PlayerController : MonoBehaviour
         {
             if (PlayerHealth < PlayerMaxHealth)
             {
-                PlayerHealth = PlayerHealth + 1;
+                PlayerHealth = PlayerHealth + (1 + PlayerInventory.ItemCounters[3]); //For each Multiplier Bonus you have you gain an extra heart from this item.
             }
+        }
+
+        //Multiplier Index
+        if (PlayerInventory.ItemCounters[3] != 0 && PreviouslyAddedItem == "multiplier")
+        {
+            float addAmount = 2;
+            PlayerInventory.MultiplierBonus = PlayerInventory.MultiplierBonus * addAmount;
         }
 
         //Default Doesnt Do Anything, Just For Testing
