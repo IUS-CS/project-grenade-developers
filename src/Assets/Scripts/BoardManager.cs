@@ -790,12 +790,6 @@ public class BoardManager : MonoBehaviour {
     void LayoutExitAtRandom(GameObject[] tileArray)
     {
             Vector3 randomPosition = RandomPosition();
-            if (randomPosition[0] >= randomPosition[1]) {
-                randomPosition = new Vector3(randomPosition[0], rows-(scaleFactor/2)-1, 0f);
-            } else {
-                randomPosition = new Vector3(columns-(scaleFactor/2)-1, randomPosition[1], 0f);
-            }//if-else
-        
             GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
             Instantiate(tileChoice, randomPosition, Quaternion.identity);
     }
