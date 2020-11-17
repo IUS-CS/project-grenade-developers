@@ -90,7 +90,7 @@ public class PlayerAI : MonoBehaviour
 
     void Update()
     {
-        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().isPlayerDead == false)
+        if (player.isPlayerDead == false)
         {
             CheckInput();
             Move();

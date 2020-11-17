@@ -40,12 +40,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7613376030209806245}
   - component: {fileID: 2087403767}
-  - component: {fileID: 7613376030209806240}
   - component: {fileID: 7613376030209806246}
   - component: {fileID: 7613376030209806247}
   - component: {fileID: 7613376030209806241}
   - component: {fileID: 7613376030209806242}
   - component: {fileID: 2292121435446151602}
+  - component: {fileID: 3960968249784254623}
   m_Layer: 8
   m_Name: EnemyDefault
   m_TagString: Enemy
@@ -107,7 +107,8 @@ SpriteRenderer:
   m_SortingLayerID: 733409481
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 3223014510230272175, guid: af74f0cbb0a8d034a8219523bbb305c2,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -115,28 +116,9 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7613376030209806240
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7613376030209806243}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b1043403e46e4a94eb0a0e9c1a1da8b4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &7613376030209806246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -153,10 +135,10 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.55}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
@@ -214,6 +196,7 @@ MonoBehaviour:
   whatStopsMovement:
     serializedVersion: 2
     m_Bits: 512
+  anim: {fileID: 3960968249784254623}
 --- !u!114 &2292121435446151602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,12 +212,31 @@ MonoBehaviour:
   EnemyTypes: []
   EnemyHealth: 1
   EnemyMovementSpeed: 1.5
-  EnemyDamageOnTarget: 0.5
+  EnemyDamageOnTarget: 1
   EnemyHitCooldown: 4
-  EnemyViewRadius: 1
+  EnemyViewRadius: 10
   EnemyHitRadius: 0.5
   isEnemyDead: 0
   Enemy: {fileID: 7613376030209806242}
   Player: {fileID: 8622602406502200626, guid: fb941dd87b757f74eb0c4379b2b447f6, type: 3}
   PlayerPosition: {fileID: 9155225001080135222, guid: fb941dd87b757f74eb0c4379b2b447f6,
     type: 3}
+--- !u!95 &3960968249784254623
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7613376030209806243}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e458be77d31c8314090712b27ddfec3f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
