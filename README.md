@@ -26,7 +26,7 @@ This is how you play our game
 
 # **Built With**
 
-This is what our game was built with
+Unity
 
 # **Authors**
 
@@ -38,7 +38,7 @@ This is what our game was built with
 
 # **License**
 
-The license goes here
+MIT License
 
 # **Acknowledgments**
 
