@@ -347,7 +347,7 @@ public class BoardManager : MonoBehaviour {
         BoardSetup();
         InitialiseList();
         int enemyCount = Random.Range(20,30);
-        int itemCount = Random.Range(10,15);
+        int itemCount = Random.Range(10,40);
         LayoutObjectAtRandom(enemyTiles, enemyCount);
         LayoutObjectAtRandom(itemTiles, itemCount);
         LayoutExitAtRandom(levelExit);

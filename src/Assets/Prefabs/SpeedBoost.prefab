@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4794019878477799629}
   - component: {fileID: 2516832268928917021}
   - component: {fileID: 18865022619209031}
-  - component: {fileID: 5607105714677387976}
   - component: {fileID: 6135162666784770831}
+  - component: {fileID: 40461207779651142}
   m_Layer: 5
   m_Name: SpeedBoost
   m_TagString: Item
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6645931541552641682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.06, y: 4.76, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,8 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 1717671363
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4752453673955023473, guid: a006ef1b2c3676a44b5bee0ace020dd0,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f89957ba3e02fe49bd80fa748826fcd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +101,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7, y: 0.69}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.6, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -111,33 +110,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5607105714677387976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6645931541552641682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10f335c13ed94fb4eb417101c272b41c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemType: speed_boost
-  ItemDescription: You Gain Increased Speed
-  itemTypeList:
-  - speed_boost
-  - pick_pocketer
-  - default
-  ITEMS:
-  - {fileID: 5607105714677387976}
-  - {fileID: 3362343400908116634, guid: 25041c2bd4911c34da14f165c34f2f5f, type: 3}
-  - {fileID: 1584419657442631203, guid: 8acf68cebe071ef4b9bac054c72257b4, type: 3}
-  playerPos: {fileID: 9155225001080135222, guid: fb941dd87b757f74eb0c4379b2b447f6,
-    type: 3}
-  player: {fileID: 9132838534423137048, guid: fb941dd87b757f74eb0c4379b2b447f6, type: 3}
-  playercontroller: {fileID: 8622602406502200626, guid: fb941dd87b757f74eb0c4379b2b447f6,
-    type: 3}
 --- !u!58 &6135162666784770831
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -154,3 +126,25 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!114 &40461207779651142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6645931541552641682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 402bf6f580ddaba4286ac6c542d842b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemType: speed_boost
+  ItemDescription: This Increases You Movement Speed Upon Picking Up
+  itemTypeList:
+  - speed_boost
+  - pick_pocketer
+  - health_boost
+  - default
+  playerPos: {fileID: 0}
+  player: {fileID: 0}
+  playercontroller: {fileID: 0}

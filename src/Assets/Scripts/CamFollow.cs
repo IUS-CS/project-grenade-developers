@@ -7,18 +7,18 @@ public class CamFollow : MonoBehaviour
 
     public bool Toggle = true;
     public float playerCamSize = 4.1f;
-    public float gameOverCamSize = 4.1f;
-    public float winCamSize = 4.1f;
+    //public float gameOverCamSize = 4.1f;
+    //public float winCamSize = 4.1f;
     public float mapCamSize = 57f;
     private Transform Player;
-    private Transform GameOverScreen;
+    //private Transform GameOverScreen;
     public PlayerController playerController;
     public Camera mainCamera;
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player").transform;
-        GameOverScreen = GameObject.FindGameObjectWithTag("GameOverScreen").transform;
+        //GameOverScreen = GameObject.FindGameObjectWithTag("GameOverScreen").transform;
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
@@ -43,7 +43,7 @@ public class CamFollow : MonoBehaviour
             }
         }
 
-        if (playerController.isPlayerDead == true) {
+/*        if (playerController.isPlayerDead == true) {
             transform.position = new Vector3(-95, 96, -10);
             mainCamera.orthographicSize = gameOverCamSize;
         }
@@ -52,6 +52,6 @@ public class CamFollow : MonoBehaviour
         {
             transform.position = new Vector3(-95,86,-10);
             mainCamera.orthographicSize = winCamSize;
-        }
+        }*/
     }
 }

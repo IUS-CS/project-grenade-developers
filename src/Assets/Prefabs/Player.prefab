@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 9132838534423137048}
   - component: {fileID: -4380320350420384502}
   - component: {fileID: 8622602406502200626}
+  - component: {fileID: 8140926276622599457}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -256,14 +257,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbf9ad24398484438fde5bc13a2fa18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerHealth: 3
+  PlayerHealth: 6
   PlayerMovementDirection: RIGHT
   PlayerMovementSpeed: 5
   PlayerPickUpRadius: 1
   isPlayerInjured: 0
   isPlayerDead: 0
+  isPlayerWinner: 0
+  PlayerFoundPortal: 0
   isPlayerImmortal: 0
+  InvulnerabilityCooldown: 4
+  NextAvailableHit: 0
   CurrentPowerUpEffect: NOTHING
   CurrentDamageResistence: 0
   PlayerInventory: {fileID: -4380320350420384502}
   PlayerMovementScript: {fileID: 9132838534423137048}
+--- !u!114 &8140926276622599457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155225001080135227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be6e349a7372604fb128d8439f7bcc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 6
+  numOfHearts: 6
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  heart: {fileID: 21300000, guid: 344f964d833d31944b00cadb956f84cc, type: 3}
+  corruptHeart: {fileID: 21300000, guid: 8a91ea221fbca3449a74a9c6265320cb, type: 3}
+  player: {fileID: 8622602406502200626}

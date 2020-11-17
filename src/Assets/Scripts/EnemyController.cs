@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour
     public GameObject[] EnemyTypes;
     public int EnemyHealth = 1;
     public float EnemyMovementSpeed = 1.5f;
-    public float EnemyDamageOnTarget = 0.5f;
+    public float EnemyDamageOnTarget = 1f;
     public float EnemyHitCooldown = 4f;
     private float EnemyNextHit = 0f;
     public float EnemyViewRadius = 10f;
