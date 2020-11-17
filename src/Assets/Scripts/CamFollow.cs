@@ -6,7 +6,7 @@ public class CamFollow : MonoBehaviour
 {
 
     public bool Toggle = true;
-    public float playerCamSize = 4.1f;
+    public float playerCamSize = 8.2f;
     //public float gameOverCamSize = 4.1f;
     //public float winCamSize = 4.1f;
     public float mapCamSize = 57f;
