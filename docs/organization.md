@@ -1,27 +1,26 @@
 # **Organization & Roles**
 
-# **--Sprint: 1--**
-
 ### Nathanael Mann
 
 * Lead Designer
+* Documentation
 * Enemy AI
-* Making Enemies Move 
+* Level Design 
 
 ### Mark Bridgewater
 
-* Graphic Rendering
-* Architecture Design
-* Enemy AI 
+* Testing and Documentation
+* SFX
+* Unity Manager
+* Project Administration
 
 ### Jacob Coomes
 
-* Hitbox Collision
-* Input Controls
-* Moving Character
+* Player Movement
 
 ### Austin Brown
 
-* Collect/Create Sprites
-* Generate Hitboxes for Maze
-* Architecture Design 
+* Menu and Inventory UI
+* Sprite Design and Animations
+* Item/Power-Up Design and Implementation
+* Health UI and Mechanics
