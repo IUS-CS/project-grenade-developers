@@ -842,6 +842,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9155225001080135227, guid: fb941dd87b757f74eb0c4379b2b447f6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb941dd87b757f74eb0c4379b2b447f6, type: 3}
 --- !u!1 &1230265133
@@ -1286,7 +1291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1663099617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1473,6 +1478,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HealthHearts
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822038979956770080, guid: e21cd0142061b574baacfdcdf50a7f67,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2822038979956770083, guid: e21cd0142061b574baacfdcdf50a7f67,
         type: 3}
@@ -1745,6 +1755,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7398378635943105068, guid: 07ee1c63a78d7a04c927646ae7f27c3b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7398378636477719077, guid: 07ee1c63a78d7a04c927646ae7f27c3b,
         type: 3}
       propertyPath: m_IsActive
@@ -1802,7 +1817,7 @@ PrefabInstance:
     - target: {fileID: 7839823611427897542, guid: 424b989a0dd1dff48822a380a7ecb041,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -138.3
+      value: -62
       objectReference: {fileID: 0}
     - target: {fileID: 7839823611427897542, guid: 424b989a0dd1dff48822a380a7ecb041,
         type: 3}
@@ -1817,7 +1832,7 @@ PrefabInstance:
     - target: {fileID: 7839823612149195170, guid: 424b989a0dd1dff48822a380a7ecb041,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -238.29997
+      value: -161.99998
       objectReference: {fileID: 0}
     - target: {fileID: 7839823612346553958, guid: 424b989a0dd1dff48822a380a7ecb041,
         type: 3}
@@ -1934,10 +1949,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventorySlots
       objectReference: {fileID: 0}
+    - target: {fileID: 7839823612346553962, guid: 424b989a0dd1dff48822a380a7ecb041,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7839823612749450948, guid: 424b989a0dd1dff48822a380a7ecb041,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 313.59998
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 7839823612749450948, guid: 424b989a0dd1dff48822a380a7ecb041,
         type: 3}
@@ -1952,12 +1972,12 @@ PrefabInstance:
     - target: {fileID: 7839823612868736312, guid: 424b989a0dd1dff48822a380a7ecb041,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 113.6
+      value: 50.000023
       objectReference: {fileID: 0}
     - target: {fileID: 7839823612941716543, guid: 424b989a0dd1dff48822a380a7ecb041,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 213.59995
+      value: 149.99997
       objectReference: {fileID: 0}
     - target: {fileID: 7839823612941716543, guid: 424b989a0dd1dff48822a380a7ecb041,
         type: 3}
@@ -1972,7 +1992,7 @@ PrefabInstance:
     - target: {fileID: 7839823613030748180, guid: 424b989a0dd1dff48822a380a7ecb041,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -338.3
+      value: -262
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 424b989a0dd1dff48822a380a7ecb041, type: 3}

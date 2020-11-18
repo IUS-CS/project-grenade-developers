@@ -85,8 +85,8 @@ public class PlayerController : MonoBehaviour
         //Multiplier Index
         if (PlayerInventory.ItemCounters[3] != 0 && PreviouslyAddedItem == "multiplier")
         {
-            float addAmount = 2;
-            PlayerInventory.MultiplierBonus = PlayerInventory.MultiplierBonus * addAmount;
+            float addAmount = 0.01f;
+            PlayerInventory.MultiplierBonus = PlayerInventory.MultiplierBonus + addAmount;
         }
 
         //Default Doesnt Do Anything, Just For Testing

@@ -1839,14 +1839,8 @@ MonoBehaviour:
   m_text: 'Movement: W, A, S, D or Up, Down, Left, Right
 
 
-    Interact: E or Zero
-
-
-    Use
-    PowerUp: Q or Ctrl
-
-
-    Drop PowerUp: X or One
+    Interact: Space or
+    RightShift
 
 
     Exiting / Pausing: ESC'

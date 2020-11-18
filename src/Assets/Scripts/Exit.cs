@@ -28,7 +28,7 @@ public class Exit : MonoBehaviour
     {
         if (player.isPlayerDead != true)
         {
-            if (IsPlayerClose() == true && Input.GetKeyDown(KeyCode.E))
+            if (IsPlayerClose() == true && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightShift)))
             {
                 player.PlayerFoundPortal = true;
             }
