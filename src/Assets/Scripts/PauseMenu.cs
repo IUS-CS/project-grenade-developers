@@ -24,11 +24,16 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
+        pauseMenuController();
+    }
+
+    void pauseMenuController()
+    {
         Death = Player.isPlayerDead;
         Win = Player.isPlayerWinner;
 
-        if (Input.GetKeyDown(KeyCode.Escape) || (Win || Death) && Input.GetKeyDown(KeyCode.P)) //<--- This is just here so you get stuck into the menu and it doesnt blink out of existence cuz its looping too fast for unity to handle. 
-                                                                                                    //You have to press exit after you die or win.
+        if (Input.GetKeyDown(KeyCode.Escape)) //<--- This is just here so you get stuck into the menu and it doesnt blink out of existence cuz its looping too fast for unity to handle. 
+                                                                //You have to press exit after you die or win.
         {
             CheckTitle();
 
@@ -60,6 +65,8 @@ public class PauseMenu : MonoBehaviour
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;
+        Death = false;
+        Win = false;
     }
 
     public void LoadMenu()
