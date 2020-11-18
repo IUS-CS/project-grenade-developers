@@ -96,6 +96,7 @@ MonoBehaviour:
   player: {fileID: 8622602406502200626, guid: fb941dd87b757f74eb0c4379b2b447f6, type: 3}
   playerPos: {fileID: 9155225001080135222, guid: fb941dd87b757f74eb0c4379b2b447f6,
     type: 3}
+  Directions: {fileID: 0}
 --- !u!212 &7277680073214527116
 SpriteRenderer:
   m_ObjectHideFlags: 0

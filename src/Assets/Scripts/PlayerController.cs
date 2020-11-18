@@ -29,6 +29,11 @@ public class PlayerController : MonoBehaviour
     //public Item[] Items;
 
     public Text WinOrLose;
+    public Text Compass;
+
+    public Transform Exit;
+
+    public CamFollow playerCam;
 
     public bool StopMovementIfDeadOrWon()
     {
@@ -112,6 +117,12 @@ public class PlayerController : MonoBehaviour
             InvulnerabilityCooldown = InvulnerabilityCooldown + addAmount;
         }
 
+        //Camera Extender 
+        if (PlayerInventory.ItemCounters[5] != 0 && PreviouslyAddedItem == "cam_wide")
+        {
+            float addAmount = 0.25f;
+            playerCam.playerCamSize = playerCam.playerCamSize + addAmount;
+        }
         //Default Doesnt Do Anything, Just For Testing
     }
 
@@ -119,11 +130,19 @@ public class PlayerController : MonoBehaviour
     {
         PlayerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         PlayerMovementScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAI>();
+        Exit = GameObject.FindGameObjectWithTag("Exit").GetComponent<Transform>();
     }
 
     void Update()
     {
         DidThePlayerDie();
         DidThePlayerWin();
+        PrintLocations();
+    }
+
+    void PrintLocations()
+    {
+        Compass.text = "Your Position: [" + (int)transform.position.x + "] [" + (int)transform.position.y + "] \n" +
+                          "Exit Position  [" + (int)Exit.transform.position.x + "] [" + (int)Exit.transform.position.y + "]";
     }
 }

@@ -22,6 +22,7 @@ public class InventoryUI : MonoBehaviour
     public Sprite healthBoost;
     public Sprite multiplier;
     public Sprite damageResist;
+    public Sprite camWide;
 
     public bool SBINST;
     public bool PPINST;
@@ -29,6 +30,7 @@ public class InventoryUI : MonoBehaviour
     public bool HBINST;
     public bool MINST;
     public bool DRINST;
+    public bool CWINST;
 
     public GameObject speedBoostButton;
     public GameObject pickPocketButton;
@@ -36,6 +38,7 @@ public class InventoryUI : MonoBehaviour
     public GameObject healthBoostButton;
     public GameObject multiplierButton;
     public GameObject damageResistButton;
+    public GameObject camWideButton;
 
     public Inventory inventory;
 
@@ -121,12 +124,12 @@ public class InventoryUI : MonoBehaviour
             }
         }
 
-        if (counters[5] > 0) //Has Default Item
+        if (counters[5] > 0) //Has Cam Wide Item
         {
-            if (DFINST != true)
+            if (CWINST != true)
             {
-                Instantiate(defaultItemButton, InventorySlots[5].transform, false);
-                DFINST = true;
+                Instantiate(camWideButton, InventorySlots[5].transform, false);
+                CWINST = true;
             }
         }
 
