@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -27,6 +28,17 @@ public class PlayerController : MonoBehaviour
     public PlayerAI PlayerMovementScript;
     //public Item[] Items;
 
+    public Text WinOrLose;
+
+    public bool StopMovementIfDeadOrWon()
+    {
+        if (isPlayerDead == true || isPlayerWinner == true)
+        {
+            return true;
+        }
+        return false;
+    }
+
     public bool CanPlayerBeHit()
     {
 
@@ -43,6 +55,8 @@ public class PlayerController : MonoBehaviour
         if (PlayerHealth == 0 && isPlayerImmortal != true)
         {
             isPlayerDead = true;
+            WinOrLose.text = "You Died...\nPress Escape";
+            return true;
         }
         return false;
     }
@@ -52,6 +66,8 @@ public class PlayerController : MonoBehaviour
         if (PlayerFoundPortal == true)
         {
             isPlayerWinner = true;
+            WinOrLose.text = "You Won!!!\nPress Escape";
+            return true;
         }
 
         return false;
@@ -87,6 +103,13 @@ public class PlayerController : MonoBehaviour
         {
             float addAmount = 0.01f;
             PlayerInventory.MultiplierBonus = PlayerInventory.MultiplierBonus + addAmount;
+        }
+
+        //Damage Resist
+        if (PlayerInventory.ItemCounters[4] != 0 && PreviouslyAddedItem == "damage_resist")
+        {
+            float addAmount = 0.01f;
+            InvulnerabilityCooldown = InvulnerabilityCooldown + addAmount;
         }
 
         //Default Doesnt Do Anything, Just For Testing

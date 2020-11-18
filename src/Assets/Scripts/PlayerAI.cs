@@ -90,7 +90,7 @@ public class PlayerAI : MonoBehaviour
 
     void Update()
     {
-        if (player.isPlayerDead == false)
+        if (player.StopMovementIfDeadOrWon() == false)
         {
             CheckInput();
             Move();

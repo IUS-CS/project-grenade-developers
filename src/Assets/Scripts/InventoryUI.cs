@@ -21,18 +21,21 @@ public class InventoryUI : MonoBehaviour
     public Sprite defaultItem;
     public Sprite healthBoost;
     public Sprite multiplier;
+    public Sprite damageResist;
 
     public bool SBINST;
     public bool PPINST;
     public bool DFINST;
     public bool HBINST;
     public bool MINST;
+    public bool DRINST;
 
     public GameObject speedBoostButton;
     public GameObject pickPocketButton;
     public GameObject defaultItemButton;
     public GameObject healthBoostButton;
     public GameObject multiplierButton;
+    public GameObject damageResistButton;
 
     public Inventory inventory;
 
@@ -109,11 +112,20 @@ public class InventoryUI : MonoBehaviour
             }
         }
 
-        if (counters[4] > 0) //Has Default Item
+        if (counters[4] > 0) //Has Damage_Resist Item
+        {
+            if (DRINST != true)
+            {
+                Instantiate(damageResistButton, InventorySlots[4].transform, false);
+                DRINST = true;
+            }
+        }
+
+        if (counters[5] > 0) //Has Default Item
         {
             if (DFINST != true)
             {
-                Instantiate(defaultItemButton, InventorySlots[4].transform, false);
+                Instantiate(defaultItemButton, InventorySlots[5].transform, false);
                 DFINST = true;
             }
         }
@@ -123,6 +135,7 @@ public class InventoryUI : MonoBehaviour
         InventoryCount2.text = "" + (counters[2]);
         InventoryCount3.text = "" + (counters[3]);
         InventoryCount4.text = "" + (counters[4]);
+        InventoryCount5.text = "" + (counters[5]);
     }
 
     void Update()

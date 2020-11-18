@@ -12,7 +12,7 @@ public class Inventory : MonoBehaviour
     public float MultiplierBonus = 0.10f;
     public int NumberOfItems = 6;
 
-    public string[] itemTypeList = { "speed_boost", "pick_pocketer", "health_boost", "multiplier", "default" };
+    public string[] itemTypeList = { "speed_boost", "pick_pocketer", "health_boost", "multiplier", "damage_resist", "default" };
     public PlayerController Player;
 
     void Start()
