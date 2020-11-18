@@ -38,7 +38,7 @@ public class Item : MonoBehaviour
 
     void Update()
     {
-        if (BeingPickedUp() == true && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Keypad0)))
+        if (BeingPickedUp() == true && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightShift)))
         {
             string AddedItem = "";
             int index = Array.IndexOf(itemTypeList, ItemType);
