@@ -106,7 +106,7 @@ This section details how the procedural generation algorithm handles the placeme
 
 Enemies are spawned randomly through the level.
 
-![Spider](/docs/images/CharacterImages/Spiders.png?raw=true "Spider")
+![Spider](/docs/images/CharacterImages/Spider.PNG?raw=true "Spider")
 
 ##### 3.3.2 Items
 
