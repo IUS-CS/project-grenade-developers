@@ -53,7 +53,7 @@ The player character will automatically move forward when the game is not paused
 
 This section details the various components of the user interface.
 
-![User Interface](/docs/images/CharacterImages/GameUI.png?raw=true "User Interface")
+![User Interface](/docs/images/CharacterImages/GameUI.PNG?raw=true "User Interface")
 
 ##### 2.3.1 Health
 
@@ -62,13 +62,13 @@ Health will be displayed at the top left-hand corner of the screen. The player w
 ![NormalHeart](/docs/images/ItemImages/Heart.gif?raw=true "NormalHeart")
 ![CorruptedHeart](/docs/images/ItemImages/CorruptedHeart.gif?raw=true "CorruptedHeart")
 
-![HealthBar](/docs/images/ItemImages/HealthBar.png?raw=true "HealthBar")
+![HealthBar](/docs/images/ItemImages/HealthBar.PNG?raw=true "HealthBar")
 
 ##### 2.3.2 Inventory
 
 The players’ inventory will display all powerups and items they have collected in a run. It takes up the bottom of the screen, below the Health. Most items simply are upgrades added to the inventory permanently, and only display for visual reference.
 
-![Inventory](/docs/images/ItemImages/Inventory.png?raw=true "Inventory")
+![Inventory](/docs/images/ItemImages/Inventory.PNG?raw=true "Inventory")
 
 #### 2.4 Interactivity
 
@@ -96,7 +96,7 @@ This section will be implemented towards the completion of the game when all the
 
 Each level will use the same base for a Procedural Generation, making sure that the levels are different each playthrough. The level generation uses a custom version of Prim's Algorithm, which is an algorithm used for generating mazes. No other object in the game can occupy the same space as a wall. Floor spaces can be occupied by any object in the game, but only one at a time. 
 
-![Prim's Algorithm](/docs/images/CharacterImages/MapGen.png?raw=true "Prim's Algorithm")
+![Prim's Algorithm](/docs/images/CharacterImages/MapGen.PNG?raw=true "Prim's Algorithm")
 
 #### 3.3 Level Population
 
