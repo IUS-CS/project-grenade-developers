@@ -53,11 +53,15 @@ The player character will automatically move forward when the game is not paused
 
 This section details the various components of the user interface.
 
-![User Interface](/docs/images/inGameUI.png?raw=true "User Interface")
+![User Interface](/docs/images/CharacterImages/GameUI.gif?raw=true "User Interface")
 
 ##### 2.3.1 Health
 
 Health will be displayed at the top left-hand corner of the screen. The player will start with 6 hearts which can be lost if the player is hit by an enemy attack.
+
+![NormalHeart](/docs/images/ItemImages/Heart.gif?raw=true "NormalHeart")
+
+![CorruptedHeart](/docs/images/ItemImages/CorruptedHeart.gif?raw=true "CorruptedHeart")
 
 ##### 2.3.2 Inventory
 
@@ -89,7 +93,7 @@ This section will be implemented towards the completion of the game when all the
 
 Each level will use the same base for a Procedural Generation, making sure that the levels are different each playthrough. The level generation uses a custom version of Prim's Algorithm, which is an algorithm used for generating mazes. No other object in the game can occupy the same space as a wall. Floor spaces can be occupied by any object in the game, but only one at a time. 
 
-![Prim's Algorithm](/docs/images/primsAlgorithm.png?raw=true "Prim's Algorithm")
+![Prim's Algorithm](/docs/images/CharacterImages/MapGen.png?raw=true "Prim's Algorithm")
 
 #### 3.3 Level Population
 
@@ -99,15 +103,22 @@ This section details how the procedural generation algorithm handles the placeme
 
 Enemies are spawned randomly through the level.
 
-##### 3.3.2 Treasure Items
+![Spider](/docs/images/CharacterImages/Spiders.png?raw=true "Spider")
+
+##### 3.3.2 Items
 
 Item are spawned randomly throught the level.
+
+![SpeedBoost](/docs/images/ItemImages/SpeedBoost2.gif?raw=true "SpeedBoost")
+![PickPocket](/docs/images/ItemImages/PickPocket2.gif?raw=true "PickPocket")
+![HealthBoost](/docs/images/ItemImages/HealthBoost2.gif?raw=true "HealthBoost")
+![Multiplier](/docs/images/ItemImages/Multiplier.gif?raw=true "Multiplier")
 
 ##### 3.3.5 Level Exits
 
 Level Exits are represented by a sign with the word exit. Moving onto one causes the game to end.
 
-![Exit Sign](/docs/images/exitSign.png?raw=true "Exit Sign")
+![Exit Sign](/docs/images/ItemImages/Exit.gif?raw=true "Exit Sign")
 
 ### 4 Enemy AI(s)
 
