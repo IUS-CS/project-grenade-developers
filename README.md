@@ -70,5 +70,5 @@ MIT License
 # **Acknowledgments**
 
 * PixelAnomaly (Map Generation Design)
-* The Serpant (Map Generation Design)
+* Anexor (Map Generation Design)
 
