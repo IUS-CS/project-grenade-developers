@@ -142,7 +142,14 @@ public class PlayerController : MonoBehaviour
 
     void PrintLocations()
     {
-        Compass.text = "Your Position: [" + (int)transform.position.x + "] [" + (int)transform.position.y + "] \n" +
-                          "Exit Position  [" + (int)Exit.transform.position.x + "] [" + (int)Exit.transform.position.y + "]";
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Compass.text = "Your Position: [" + (int)transform.position.x + "] [" + (int)transform.position.y + "] \n" +
+                              "Exit Position  [" + (int)Exit.transform.position.x + "] [" + (int)Exit.transform.position.y + "]";
+            return;
+        }
+
+        Compass.text = "";
     }
 }
