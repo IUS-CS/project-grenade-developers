@@ -1246,6 +1246,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1603790652205151792, guid: c80e7e8f5e5d6a143b2e9f1818042c55,
         type: 3}
+      propertyPath: enemyTiles.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603790652205151792, guid: c80e7e8f5e5d6a143b2e9f1818042c55,
+        type: 3}
       propertyPath: itemTiles.Array.data[3]
       value: 
       objectReference: {fileID: 8305008859863351645, guid: 9d1418b48e829314a860fe62862d04db,
@@ -1268,6 +1273,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6427397840560496213, guid: af20f7dd69c1d284e8452664af634148,
         type: 3}
+    - target: {fileID: 1603790652205151792, guid: c80e7e8f5e5d6a143b2e9f1818042c55,
+        type: 3}
+      propertyPath: enemyTiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1603790652205151793, guid: c80e7e8f5e5d6a143b2e9f1818042c55,
         type: 3}
       propertyPath: m_Name
