@@ -53,19 +53,22 @@ The player character will automatically move forward when the game is not paused
 
 This section details the various components of the user interface.
 
-![User Interface](/docs/images/CharacterImages/GameUI.gif?raw=true "User Interface")
+![User Interface](/docs/images/CharacterImages/GameUI.png?raw=true "User Interface")
 
 ##### 2.3.1 Health
 
 Health will be displayed at the top left-hand corner of the screen. The player will start with 6 hearts which can be lost if the player is hit by an enemy attack.
 
 ![NormalHeart](/docs/images/ItemImages/Heart.gif?raw=true "NormalHeart")
-
 ![CorruptedHeart](/docs/images/ItemImages/CorruptedHeart.gif?raw=true "CorruptedHeart")
+
+![HealthBar](/docs/images/ItemImages/HealthBar.png?raw=true "HealthBar")
 
 ##### 2.3.2 Inventory
 
 The players’ inventory will display all powerups and items they have collected in a run. It takes up the bottom of the screen, below the Health. Most items simply are upgrades added to the inventory permanently, and only display for visual reference.
+
+![Inventory](/docs/images/ItemImages/Inventory.png?raw=true "Inventory")
 
 #### 2.4 Interactivity
 
@@ -113,6 +116,8 @@ Item are spawned randomly throught the level.
 ![PickPocket](/docs/images/ItemImages/PickPocket2.gif?raw=true "PickPocket")
 ![HealthBoost](/docs/images/ItemImages/HealthBoost2.gif?raw=true "HealthBoost")
 ![Multiplier](/docs/images/ItemImages/Multiplier.gif?raw=true "Multiplier")
+![DamageResist](/docs/images/ItemImages/DamageResist.gif?raw=true "DamageResist")
+![CamExtend](/docs/images/ItemImages/CameraExtend.gif?raw=true "CamExtend")
 
 ##### 3.3.5 Level Exits
 
